@@ -1,0 +1,516 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--手機RWD宣告-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!--/手機RWD宣告-->
+    <meta property="og:title" content="杰境室內設計｜S.J. Interior Design" />
+    <meta property="og:description" content="住宅室內設計裝修規劃｜辦公室設計裝修規劃｜老屋翻修規劃｜設計圖繪製｜專業責任施工｜傢俱規劃建議｜3D 製圖預覽" />
+    <meta property="og:type" content="Interior.Design" />
+    <meta property="og:url" content="https://sjdesign.neocities.org/" />
+    <link rel="icon" href="img/title-icon.ico" type="image/x-icon" />
+
+    <title>杰境室內設計｜S.J. Interior Design</title>
+
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet" />
+    <!--/Google Fonts-->
+
+    <!--RWD MENU相關-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <!--/RWD MENU相關-->
+
+    <!--go to top js-->
+    <script type="text/javascript">
+        $(function () {
+            $("#gotop").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 500);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
+
+
+    <!-- 錨點滑動 -->
+    <script>
+        $(document).ready(function () {
+            $("a").on("click", function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash; //抓取網頁#錨點
+                    console.log(hash);
+                    $("html,body").animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800
+                    );
+                }
+            });
+        });
+    </script>
+
+    <!-- 當前按鈕 -->
+    <script>
+        $(document).ready(function () {
+            $('ul li a').click(function () {
+                $('li a').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 500) {
+                document.getElementById("header-fixed").style.background = '#181818e0';
+                document.getElementById("header-fixed").style.marginTop = '-35px';
+                document.getElementById("logoimg").style.maxWidth = '130px';
+                document.getElementById("menu-line").style.display = 'none';
+
+            }
+
+            else {
+                document.getElementById("header-fixed").style.background = 'none';
+                document.getElementById("header-fixed").style.marginTop = '0';
+                document.getElementById("logoimg").style.maxWidth = '160px';
+                document.getElementById("menu-line").style.display = 'block';
+                $('li a').removeClass("active");
+
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <section>
+
+        <div id="gotop">
+            <div class="arrow"></div>
+        </div>
+
+
+        <div id="header-fixed">
+            <div class="header-container">
+                <div id="logo">
+                    <a href="#banner"><img src="img/sj-logo.png" id="logoimg"></a>
+                </div>
+                <div id="cssmenu">
+                    <ul>
+                        <li><a href="index.html#case-area">作品</a></li>
+                        <li><a href="#service-bg">服務</a></li>
+                        <li><a href="#sop-bg">流程</a></li>
+                        <li><a href="#intro-area-bg">關於</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="header-m">
+            <div class="header-container">
+                <div id="logo">
+                    <a href="#banner"><img src="img/sj-logo.png" id="logoimg"></a>
+                </div>
+                <div id="cssmenu">
+                    <ul>
+                        <li><a href="index.html#case-area">作品</a></li>
+                        <li><a href="#service-bg">服務</a></li>
+                        <li><a href="#sop-bg">流程</a></li>
+                        <li><a href="#intro-area-bg">關於</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="banner">
+
+            <div id="banner-slider-demo-17" class="owl-carousel owl-theme">
+                <div class="item slide block-call-to-action" style="background-image: url('img/banner01.jpg')">
+                    <!-- <div class="black-gradient"></div> -->
+                    <!-- <h2 class="title">為家，竭盡所能</h2>
+                    <p class="below-title">為您作全方位考量，盡心盡力為每個家帶來最恰當的設計。</p>
+                    <a href="#" class="btn call-to-action">
+                        <div class="next-arrow"></div>
+                    </a> -->
+                </div>
+                <div class="item slide block-call-to-action" style="background-image: url('img/banner02.jpg')">
+                    <!-- <h2 class="title">杰境所能，竭盡所能</h2>
+                    <p class="below-title">為您作全方位考量，盡心盡力為每個家帶來最恰當的設計。</p>
+                    <a href="#" class="btn call-to-action">
+                        <div class="next-arrow"></div>
+                    </a> -->
+                </div>
+                <div class="item slide block-call-to-action" style="background-image: url('img/banner03.jpg')">
+                    <!-- <h2 class="title">為家，竭盡所能</h2>
+                    <p class="below-title">為您作全方位考量，盡心盡力為每個家帶來最恰當的設計。</p>
+                    <a href="#"
+                        class="btn call-to-action">
+                        <div class="next-arrow"></div>
+                    </a> -->
+                </div>
+                <div class="item slide block-call-to-action" style="background-image: url('img/banner04.jpg')">
+                    <!-- <h2 class="title">為家，竭盡所能</h2>
+                    <p class="below-title">為您作全方位考量，盡心盡力為每個家帶來最恰當的設計。</p>
+                    <a href="#"
+                        class="btn call-to-action">
+                        <div class="next-arrow"></div>
+                    </a> -->
+                </div>
+            </div>
+            <!-- <div class="item slide block-call-to-action" style="background-image: url('img/banner05.jpg')"></div> -->
+        </div>
+        <div class="next"><a href="#case-area">
+                <div class="next-arrow"></div>
+            </a>
+        </div>
+
+
+    </section>
+
+
+    <section>
+
+        <div id="case-area">
+            <h2>作品</h2>
+            <div id="case">
+                <div class="case-box"><a href="project002.html">
+                        <div class="case-tit">新莊唐宅</div>
+                        <div class="case-info">2019</div>
+                        <img src="img/case002.png">
+                    </a>
+                </div>
+                <div class="case-box"><a href="project001.html">
+                        <div class="case-tit">汐止王邸</div>
+                        <div class="case-info">2020</div>
+                        <img src="img/case001.png">
+                    </a>
+                </div>
+
+                <div class="case-box"><a href="project003.html">
+                        <div class="case-tit">新莊劉宅</div>
+                        <div class="case-info">2021</div>
+                        <img src="img/case003.png">
+                    </a>
+                </div>
+                <div class="case-box"><a href="project004.html">
+                        <div class="case-tit">新莊呂宅</div>
+                        <div class="case-info">2022</div>
+                        <img src="img/case004.png">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="next"><a href="#service-bg">
+                    <div class="next-arrow"></div>
+                </a></div>
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div id="service-bg">
+            <h2><span style="color:#5e9d66">服務</span>項目</h2>
+
+            <div class="service-group">
+                <div class="service-area">
+
+                    <div class="service">
+                        <div class="service-icon"><img src="img/s01.png"></div>
+                        <div class="service-item">住宅室內設計裝修規劃</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><img src="img/s02.png"></div>
+                        <div class="service-item">辦公室設計裝修規劃</div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon"><img src="img/s03.png"></div>
+                        <div class="service-item">老屋翻修規劃</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><img src="img/s04.png"></div>
+                        <div class="service-item">設計圖繪製</div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon"><img src="img/s05.png"></div>
+                        <div class="service-item">3D 製圖預覽</div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon"><img src="img/s06.png"></div>
+                        <div class="service-item">專業責任施工</div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon"><img src="img/s07.png"></div>
+                        <div class="service-item">傢俱規劃建議</div>
+                    </div>
+                </div>
+            </div>
+            <div class="next"><a href="#sop-bg">
+                    <div class="next-arrow"></div>
+                </a></div>
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div id="sop-bg">
+            <h2 class="w">服務<span style="color:#64b76f">流程</span></h2>
+
+            <div class="sop-group">
+                <div class="sop-area">
+                    <div class="sop-num">1</div>
+                    <h4 class="sop-item"><strong>需求訪談</strong></h4>
+                    <div class="sop-detail">
+                        我們會先瞭解您的需求及現況，並說明設計費用
+                    </div>
+                </div>
+                <div class="next-step">▼</div>
+                <div class="sop-area">
+                    <div class="sop-num">2</div>
+                    <h4 class="sop-item">現場丈量</h4>
+                    <div class="sop-detail">
+                        設計師會親自到現場進行丈量，精確了解案場
+                    </div>
+                </div>
+                <div class="next-step">▼</div>
+                <div class="sop-area">
+                    <div class="sop-num">3</div>
+                    <h4 class="sop-item">提供平面配置圖 & 初步報價</h4>
+                    <div class="sop-detail">
+                        依據您的需求規劃配置及細節討論與修改，並提供初步報價
+                    </div>
+                </div>
+                <div class="next-step">▼</div>
+                <div class="sop-area">
+                    <div class="sop-num">4</div>
+                    <h4 class="sop-item">簽訂設計約</h4>
+                    <div class="sop-detail">
+                        簽訂設計合約前，將不提供任何圖面供您留存，敬請見諒
+                    </div>
+                </div>
+                <div class="next-step">▼</div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div id="sop-bg2">
+            <div class="sop-group">
+
+                <div class="sop-area">
+                    <div class="sop-num">5</div>
+                    <h4 class="sop-item">繪製施工圖、效果圖 & 工程報價</h4>
+                    <div class="sop-detail">
+                        1、繪製 3D 模擬圖 、設計施工圖<br>
+                        2、工程預算確認及工程進度討論
+                    </div>
+                </div>
+                <div class="next-step">▼</div>
+                <div class="sop-area">
+                    <div class="sop-num">6</div>
+                    <h4 class="sop-item">簽訂工程合約</h4>
+                    <div class="sop-detail">
+                        1、工程進度及施工期限確認<br>
+                        2、付款方式說明
+                    </div>
+                </div>
+                <div class="next-step">▼</div>
+                <div class="sop-area">
+                    <div class="sop-num">7</div>
+                    <h4 class="sop-item">工程施工</h4>
+                    <div class="sop-detail">
+                        1、依據施工圖面進行施工<br>
+                        2、工程進度掌控與協調
+                    </div>
+                </div>
+                <div class="next-step">▼</div>
+                <div class="sop-area">
+                    <div class="sop-num">8</div>
+                    <h4 class="sop-item">交屋及售後服務</h4>
+                    <div class="sop-detail">
+                        提供完善的售後服務及保固
+                    </div>
+                </div>
+
+                <div class="next">
+                    <a href="#intro-area-bg">
+                        <div class="next-arrow w"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section>
+
+        <div id="intro-area-bg">
+            <h2>關於</h2>
+            <div class="intro-area">
+                <div class="photo">
+                    <img src="img/photo1.png" alt="形象照">
+                </div>
+                <div class="info">
+                    <div class="job-title">設計師</div>
+                    <div class="name">鄭世杰</div>
+                    <ul class="text">
+                        <li>生活管家室內裝修設計 室內設計師</li>
+                        <li>乙級建築物室內設計技術士</li>
+                        <li>乙級建築物室內裝修工程管理技術士</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intro-area">
+                <div class="side">
+                    <div class="idea">理念</div>
+                    <div class="slogan">為家，竭盡所能</div>
+                </div>
+                <div class="r-side">
+                    <ul class="text">
+                        除了重視視覺上的美感，我們也重視實際使用上的實用性，<br>
+                        為您作全方位考量，盡心盡力為每個家帶來最恰當的設計。
+                    </ul>
+                </div>
+               
+            </div>
+            <div id="footer">杰境室內設計 © S.J. Interior Design</div>
+        </div>
+
+        
+    </section>
+
+    <!--Banner Slider-->
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        type="text/javascript"></script>
+
+
+    <script>
+        carousal();
+
+        function carousal() {
+            $("#banner-slider-demo-17").owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                nav: false,
+                dots: true,
+                navRewind: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                loop: true
+            });
+        }
+    </script>
+
+    <!--滑鼠滾動-->
+    <script>
+        const $body = window.opera
+            ? document.compatMode == "CSS1Compat"
+                ? $("html")
+                : $("body")
+            : $("html,body"),
+            $section = $("section");
+
+        var numOfPages = $section.length - 1, //取得section的數量
+            curPage = 0, //初始頁
+            scrollLock = false;
+
+        function scrollPage() {
+            //滑鼠滾動
+            $(document).on("mousewheel DOMMouseScroll", function (e) {
+                if (scrollLock) return;
+                if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0)
+                    navigateUp();
+                else navigateDown();
+            });
+            //鍵盤上下鍵
+            $(document).on("keydown", function (e) {
+                if (scrollLock) return;
+                if (e.which === 38) navigateUp();
+                else if (e.which === 40) navigateDown();
+            });
+        }
+
+        function pagination() {
+            scrollLock = true;
+            $body.stop().animate(
+                {
+                    scrollTop: $section.eq(curPage).offset().top
+                },
+                1000,
+                "swing",
+                function () {
+                    scrollLock = false;
+                }
+            );
+        }
+
+        function navigateUp() {
+            if (curPage === 0) return;
+            curPage--;
+            pagination();
+        }
+
+        function navigateDown() {
+            if (curPage === numOfPages) return;
+            curPage++;
+            pagination();
+        }
+
+        $(function () {
+            scrollPage();
+        });
+
+    </script>
+
+</body>
+
+
+
+</html>
