@@ -50,7 +50,7 @@
   }
   .banner-slider .slider-nav .slick-slide {
     text-align: center;
-    height: 13vh; /*每張縮圖高*/
+    height: 100px; /*每張縮圖高*/
     overflow: hidden;
     margin-bottom: 10px;
   
@@ -97,7 +97,20 @@
     overflow: hidden;
   }
 
-  
+  @media only screen and (max-width: 1440px) {
+
+    .banner-slider .slider-nav .slick-slide {
+      height: 70px;
+    }  
+  } 
+
+  @media only screen and (max-width: 1024px) {
+
+    .banner-slider .slider-nav .slick-slide {
+      height: 50px;
+    }  
+  } 
+
   @media screen and (max-width: 991px) {
     .banner-slider .slider.slider-for,
     .banner-slider .slider.slider-nav {
