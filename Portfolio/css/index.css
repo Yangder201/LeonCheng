@@ -438,8 +438,8 @@ section {
 }
 
 .text li {
-    list-style-type: none;
-    margin-left: 5px;
+    list-style-type: '▪ ';
+    margin-left: 15px;
 }
 
 
