@@ -295,6 +295,8 @@ section {
     position: relative;
     background: #2a2b2b;
     border: #cccccc 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 
