@@ -78,9 +78,13 @@ body {
 }
 
 
+
+
 .owl-theme .owl-dots .owl-dot span{
     width: 40px !important;
-    height: 4px !important;
+    height: 3px !important;
+    background: #ffffff6b !important;
+    border-radius: 0 !important;
 }
 
 
