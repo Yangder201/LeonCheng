@@ -564,7 +564,7 @@ h2 {
     width: 100vmax;
     height: fit-content;
     margin: auto;
-    background: #464646;
+    background:linear-gradient(to top, #505050,#181818);
     /* background: linear-gradient(to top, #4d7951,#263f2b); */
     min-height: 85vh;
     padding-top: 15vh;
@@ -670,8 +670,8 @@ h2 {
     letter-spacing: 2px;
     color: #afafaf;
     text-align: center;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-top: 15vh;
 
 
 }
