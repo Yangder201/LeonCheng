@@ -77,9 +77,8 @@
 }
 
 #cssmenu>ul>li>a {
-
   text-align: center;
-  margin: 30px;
+  margin: 30px 30px 0 30px;
   width: 50%;
   font-size: 1rem;
   text-decoration: none;
@@ -99,8 +98,8 @@
 }
 
 .active{
-  background: #00000052;
-  /* border-bottom:  3px solid #ffffff; */
+  /* background: #00000052; */
+  border-bottom:  3px solid #ffffff;
 
 }
 
