@@ -610,16 +610,16 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px 50px;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     /* box-shadow: 2px 5px 10px #2d2d2da8; */
-    border: 1px dashed #a9a9a9;
+    border-bottom: 2px solid #a9a9a9;
     overflow: hidden;
 
 }
 
 .sop-num {
     width: 10%;
-    color: #545454;
+    color: #97979740;
     font-size: 9rem;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1165,6 +1165,10 @@ h2 {
 }
 
 
+#m-project{
+    display: none;
+}
+
 
 @media only screen and (max-width: 1440px) {
 
@@ -1487,6 +1491,7 @@ h2 {
     }
 
     /*內頁*/
+    
 
     #inside-logo {
         font-weight: bolder;
@@ -1500,6 +1505,21 @@ h2 {
 
     }
 
+    .wrapper{
+        display: none;
+    }
+
+    #m-project{
+        display: block;
+    }
+    .project-box{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .project-box img{
+        border-radius: 5px;  
+    }
 
     /* 作品列表 */
     .project {
