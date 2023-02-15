@@ -1574,8 +1574,9 @@ h2 {
 
 
     .back-m a {
-        width: 90px;
-        height: 40px;
+        width: 150px;
+        height: 60px;
+        font-weight: 600;
         display: flex;
         justify-content: center;
         align-items: center;
