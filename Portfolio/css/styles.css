@@ -34,7 +34,6 @@
 #cssmenu {
   float: right;
   line-height: 1;
-  width: 80vmin;
 }
 
 #menu-line {
@@ -78,9 +77,10 @@
 }
 
 #cssmenu>ul>li>a {
-  padding-top: 4.6vh; /*focus固定線位置*/
+
   text-align: center;
-  width: 18vmin;
+  margin: 30px;
+  width: 50%;
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
