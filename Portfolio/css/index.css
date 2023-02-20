@@ -84,12 +84,11 @@ section {
 .next {
     width: 80px;
     height: 50px;
+    padding-top: 25px;
     margin: auto;
     text-align: center;
     /* background: #afafaf; */
     border-radius: 20px;
-    padding: 25px;
-    clear: both;
 
     animation-name: next;
     animation-duration: .6s;
@@ -101,11 +100,12 @@ section {
 
 @keyframes next{
 0%{
-    margin-top:0px
+    padding-top:25px
 }
 
 100%{
-    margin-top:8px
+    padding-top:30px;
+    height: 45px;
 }
 
 }
