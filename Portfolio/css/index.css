@@ -312,7 +312,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: .7;
+    opacity: .8;
     transition: .3s ease-out;
 
 }
@@ -395,7 +395,7 @@ section {
 
 .case-info {
     position: relative;
-    margin-bottom: -49.5vh;
+    /* margin-bottom: -49.5vh; */
     width: 100%;
     text-align: center;
     font-size: 16px;
