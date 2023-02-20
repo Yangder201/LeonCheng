@@ -345,8 +345,10 @@ section {
 
 .case .item:hover{
     flex: 2 1;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition: .4s ease-in-out;
+
 
 }
 
@@ -506,14 +508,6 @@ section {
 }
 
 
-/*首頁大標題*/
-.title {
-    padding-bottom: 30px;
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
-    clear: both;
-}
 
 h2 {
     padding-bottom: 30px;
@@ -606,8 +600,8 @@ h2 {
     max-width: 300px;
     padding: 0 10px;
     font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     text-align: center;
 }
 
@@ -616,7 +610,7 @@ h2 {
     width: 100vmax;
     height: fit-content;
     margin: auto;
-    background:linear-gradient(to top, #505050,#181818);
+    background: linear-gradient(to top, #d1d1d1,#d1d1d1);
     /* background: linear-gradient(to top, #4d7951,#263f2b); */
     min-height: 85vh;
     padding-top: 15vh;
@@ -654,32 +648,21 @@ h2 {
     max-width: 100%;
     margin-bottom: 5px;
     min-height: 50px;
-    color: #e4e4e4;
-    /* background: #ececec; */
+    color: #363636;
+    background: #ececec;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px 50px;
-    /* border-radius: 7px; */
+    border-radius: 7px;
     /* box-shadow: 2px 5px 10px #2d2d2da8; */
-    border-bottom: 2px solid #a9a9a9;
+    /* border-bottom: 2px solid #a9a9a9; */
     overflow: hidden;
 
 }
 
-.sop-num {
-    width: 10%;
-    color: #97979740;
-    font-size: 9rem;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: -70px;
-    margin-bottom: -35px;
-    margin-right: 40px;
-}
-
 .sop-item {
-    width: 23%;
+    width: 50%;
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 30px;
@@ -696,17 +679,17 @@ h2 {
 }
 
 .sop-detail {
-    width: 60%;
+    width: 38%;
+    font-size: 1.2rem;
     line-height: 30px;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+
 }
 
 .next-step {
-    width: 20vmax;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    text-align: center;
     padding: 8px;
     color: #afafaf;
 }
@@ -1521,7 +1504,7 @@ h2 {
     }
 
     .sop-area {
-        margin: 5px auto;
+        margin: 15PX;
         padding: 15px 10px;
     }
 
@@ -1539,8 +1522,8 @@ h2 {
 
     .sop-detail {
         width: 100%;
-        margin-left: 18%;
-        line-height: 20px;
+        margin-left: 10%;
+        line-height: 2rem;
     }
 
     .next-step {
