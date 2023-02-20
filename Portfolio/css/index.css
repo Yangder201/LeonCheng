@@ -574,9 +574,13 @@ h2 {
 
 .service-group {
     max-width: 100vmin;
-    min-height: 60vh;
-    margin: auto;
-    padding: 20px 0 5px 0;
+    /* margin-top: 5vh; */
+    height: 60vh;
+    margin: 5vh auto 0 auto;
+    display: flex;
+    /* padding: 20px 0 5px 0; */
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .service-area {
