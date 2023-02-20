@@ -309,11 +309,11 @@ section {
     border-radius: 7px;
     background-size: cover;
     background-position: center;
-    transition: .5s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: .7;
+    transition: .3s ease-out;
 
 }
 
@@ -344,9 +344,9 @@ section {
 
 
 .case .item:hover{
-    flex: 3 1;
+    flex: 2 1;
     opacity: 1;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
 
 }
 
