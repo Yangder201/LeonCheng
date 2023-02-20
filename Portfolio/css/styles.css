@@ -97,11 +97,6 @@
 
 }
 
-.active{
-  /* background: #00000052; */
-  border-bottom:  3px solid #ffffff;
-
-}
 
 
 #cssmenu>ul>li> a::after{
