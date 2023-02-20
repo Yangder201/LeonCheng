@@ -584,10 +584,8 @@ h2 {
     /* margin-top: 5vh; */
     height: 60vh;
     margin: 5vh auto 0 auto;
-    display: flex;
     /* padding: 20px 0 5px 0; */
-    flex-wrap: wrap;
-    align-content: space-around;
+
 }
 
 .service-area {
@@ -1256,7 +1254,8 @@ h2 {
     }
 
     .service-group {
-        max-width: 80vmax;
+        max-width: 100vw;
+        height: fit-content;
         margin: auto;
         padding: 20px 0 5px 0;
     }
@@ -1309,7 +1308,7 @@ h2 {
     }
 
     #case-area{
-        height: 60vh;
+        min-height: 70vh;
     }
 
 
@@ -1367,7 +1366,7 @@ h2 {
     }
 
     #banner {
-        min-height: 50vh;
+       height: 80vh;
     }
 
     h2 {
@@ -1425,7 +1424,6 @@ h2 {
         width: 100%;
         height: fit-content;
         padding-top: 100px;
-        background-image: url(../img/info-bg.jpg);
         background-repeat: no-repeat;
         background-position: bottom right;
     }
@@ -1456,7 +1454,6 @@ h2 {
         padding: 15px 5px;
         line-height: 2.5rem;
         list-style-type: none;
-        color: #444444;
         font-size: 1rem;
     }
 
@@ -1529,7 +1526,6 @@ h2 {
     }
 
     .sop-area {
-        margin: 15PX;
         padding: 15px 10px;
     }
 
@@ -1702,5 +1698,9 @@ h2 {
 
     .service{
         width: 35vmin;
+    }
+
+    #footer{
+        padding-top: 5px;
     }
 }
