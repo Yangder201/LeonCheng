@@ -274,20 +274,18 @@ section {
 }
 
 
+
 #case-area {
     width: 100%;
     height: 100vh;
     padding-top: 30px;
-    display: block;
-    clear: both;
 }
+
 
 #case {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-}
+    display: none;
 
+}
 .case-box {
     max-width: 100%;
     height: 100%;
@@ -296,6 +294,60 @@ section {
     border: #cccccc 1px solid;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.case {
+    width:100vw;
+    height: 80vh;
+    display: flex;
+    gap: 5px;
+}
+
+
+.case .item{
+    flex: 1 1;
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .7;
+
+}
+
+.case .item a{
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.case .item:nth-child(1) {
+    background-image: url(../img/project002.jpg);
+}
+
+.case .item:nth-child(2) {
+    background-image: url(../img/project001.jpg);
+}
+
+
+.case .item:nth-child(3) {
+    background-image: url(../img/project003.jpg);
+}
+.case .item:nth-child(4) {
+    background-image: url(../img/project001.jpg);
+}
+
+
+.case .item:hover{
+    flex: 3 1;
+    opacity: 1;
+    transition: .5s ease-in-out;
+
 }
 
 
@@ -307,8 +359,6 @@ section {
     z-index: 80;
     display: block;
     opacity: .5;
-    transform: 1s;
-    -moz-transform: 1s;
 
 }
 
@@ -1316,11 +1366,19 @@ h2 {
         padding-bottom: 5px;
     }
 
+
+ 
+
     #case {
+        display: block;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         padding-top: 15px;
+    }
+
+    .case{
+        display: none;
     }
 
     #case-area {
@@ -1475,8 +1533,8 @@ h2 {
 
     .sop-item {
         width: 80%;
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
     }
 
     .sop-detail {
