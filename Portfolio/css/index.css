@@ -330,18 +330,33 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: .8;
     transition: .3s ease-out;
 
 }
 
 .case .item a{
     width: 100%;
+    height: 100%;
     display: block;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+}
+
+.case .item a:hover{
+    width: 100%;
+    height: 100%;
+    background: #0000007a;
+    transition: .4s ease-in-out;
+}
+
+
+.case .item:hover{
+    flex: 2 1;
+    transition: .4s ease-in-out;
+
+
 }
 
 .case .item:nth-child(1) {
@@ -361,14 +376,6 @@ section {
 }
 
 
-.case .item:hover{
-    flex: 2 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    transition: .4s ease-in-out;
-
-
-}
 
 
 .case-box a {
@@ -566,7 +573,8 @@ h2 {
     width: 100%;
     height: 85vh;
     padding-top: 15vh;
-    background: radial-gradient(ellipse at center, #ffffff, #d9d9d9);
+    background: #f6f6f6;
+    /* background: radial-gradient(ellipse at center, #ffffff, #d9d9d9); */
     background-attachment: fixed;
 
 }
@@ -632,8 +640,8 @@ h2 {
     width: 100vmax;
     height: fit-content;
     margin: auto;
-    background: linear-gradient(to top, #d1d1d1,#d1d1d1);
-    /* background: linear-gradient(to top, #4d7951,#263f2b); */
+    background: linear-gradient(to top, #d7d7d7,#e7e7e7);
+    /* background: linear-gradient(to top, #3d483d,#404641); */
     min-height: 85vh;
     padding-top: 15vh;
 }
@@ -667,7 +675,8 @@ h2 {
 
 
 .sop-area {
-    max-width: 100%;
+    max-width: 80%;
+    margin: auto;
     margin-bottom: 5px;
     min-height: 50px;
     color: #363636;
@@ -677,7 +686,7 @@ h2 {
     justify-content: space-evenly;
     padding: 10px 50px;
     border-radius: 7px;
-    /* box-shadow: 2px 5px 10px #2d2d2da8; */
+    box-shadow: 13px 13px 20px #c9c9c99e;
     /* border-bottom: 2px solid #a9a9a9; */
     overflow: hidden;
 
@@ -695,13 +704,8 @@ h2 {
 
 }
 
-.sop-item p strong {
-    padding: 6px;
-    border-bottom: #5e9d66 2px solid;
-}
-
 .sop-detail {
-    width: 38%;
+    width: 40%;
     font-size: 1.2rem;
     line-height: 30px;
     display: flex;
@@ -710,10 +714,10 @@ h2 {
 }
 
 .next-step {
-    width: 100%;
+    width: 99%;
     text-align: center;
     padding: 8px;
-    color: #afafaf;
+    color: rgb(104, 104, 104);
 }
 
 
