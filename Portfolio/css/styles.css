@@ -345,7 +345,7 @@
     top: 28px;
     right: 30px;
     display: block;
-    width: 25px;
+    width: 30px;
     height: 3px;
     background: #ffffff;
   }
@@ -353,13 +353,13 @@
   #cssmenu #menu-button::before {
     content: '';
     position: absolute;
-    top: 35px;
+    top: 10px;
     right: 30px;
     display: block;
-    width: 25px;
-    height: 3px;
-    border-top: 3px solid #999999;
-    border-bottom: 3px solid #8b8b8b;
+    width: 30px;
+    height: 12px;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
   }
 
   #cssmenu .submenu-button {

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-html{
+html {
     font-size: 16px;
     font-family: 'Noto Sans TC', 'Source Sans Pro', sans-serif;
     color: rgb(68, 67, 67);
@@ -45,7 +45,7 @@ img {
 section {
     height: 100vh;
     position: relative;
-  }
+}
 
 #gotop {
     display: none;
@@ -76,7 +76,8 @@ section {
 
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     background: #4c4c4c !important;
 }
 
@@ -97,15 +98,15 @@ section {
     animation-direction: alternate;
 }
 
-@keyframes next{
-0%{
-    padding-top:25px
-}
+@keyframes next {
+    0% {
+        padding-top: 25px
+    }
 
-100%{
-    padding-top:30px;
-    height: 45px;
-}
+    100% {
+        padding-top: 30px;
+        height: 45px;
+    }
 
 }
 
@@ -303,6 +304,7 @@ section {
     display: none;
 
 }
+
 .case-box {
     max-width: 100%;
     height: 100%;
@@ -314,14 +316,14 @@ section {
 }
 
 .case {
-    width:100vw;
+    width: 100vw;
     height: 80vh;
     display: flex;
     gap: 5px;
 }
 
 
-.case .item{
+.case .item {
     flex: 1 1;
     border-radius: 7px;
     background-size: cover;
@@ -333,7 +335,7 @@ section {
 
 }
 
-.case .item a{
+.case .item a {
     width: 100%;
     height: 100%;
     display: block;
@@ -344,7 +346,7 @@ section {
     align-content: center;
 }
 
-.case .item a:hover{
+.case .item a:hover {
     width: 100%;
     height: 100%;
     background: #0000007a;
@@ -352,7 +354,7 @@ section {
 }
 
 
-.case .item:hover{
+.case .item:hover {
     flex: 2 1;
     transition: .4s ease-in-out;
 
@@ -371,6 +373,7 @@ section {
 .case .item:nth-child(3) {
     background-image: url(../img/project003.jpg);
 }
+
 .case .item:nth-child(4) {
     background-image: url(../img/project004.jpg);
 }
@@ -638,7 +641,7 @@ h2 {
     height: fit-content;
     margin: auto;
     /* background: #383838; */
-    background: linear-gradient(to top, #d7d7d7,#e7e7e7);
+    background: linear-gradient(to top, #d7d7d7, #e7e7e7);
     /* background: linear-gradient(to top, #3d483d,#404641); */
     min-height: 85vh;
     padding-top: 15vh;
@@ -754,7 +757,6 @@ h2 {
     height: fit-content;
     margin: 50px auto;
     line-height: 30px;
-    color: #f7f7f7;
 
 }
 
@@ -1218,12 +1220,12 @@ h2 {
 }
 
 
-#header-m{
+#header-m {
     display: none;
 }
 
 
-#m-project{
+#m-project {
     display: none;
 }
 
@@ -1251,7 +1253,8 @@ h2 {
     border-radius: 10px; */
 
     }
-    .info{
+
+    .info {
         width: 40vmax;
     }
 
@@ -1262,11 +1265,11 @@ h2 {
         padding: 20px 0 5px 0;
     }
 
-    .service{
+    .service {
         width: 15vmax;
     }
 
-    .sop-group{
+    .sop-group {
         max-width: 70vmax;
     }
 
@@ -1284,15 +1287,15 @@ h2 {
     }
 
 
-    .case-box{
+    .case-box {
         padding-top: 32.5vh;
     }
 
-    .case-info{
+    .case-info {
         margin-bottom: -40vh;
     }
 
-    
+
 
 }
 
@@ -1301,34 +1304,42 @@ h2 {
 
 @media only screen and (max-width: 1024px) {
 
-    .header-container{
+    .header-container {
         max-width: 90vmax;
     }
 
-    #logo{
+    #logo {
         width: 15vmin;
     }
 
-    #case-area{
+    #case-area {
         min-height: 70vh;
     }
 
 
-    .case-box{
+    .case-box {
         padding-top: 23vh;
     }
 
-    .case-info{
+    .case-info {
         margin-bottom: -30vh;
     }
 
-    .case-tit{
+    .case-tit {
         font-size: 1.8rem;
     }
 
-    .intro-area{
+    .intro-area {
         width: 100vmax;
     }
+
+    
+    .project {
+        background: none;
+        width: 40vw;
+        height: 300px;
+    }
+
 
 }
 
@@ -1337,13 +1348,13 @@ h2 {
 
     section {
         height: fit-content;
-      }
+    }
 
     #header-fixed {
         min-height: 65px;
         background: #111111ef !important;
         /* display: none; */
-        margin-top:-5px !important;
+        margin-top: -5px !important;
     }
 
     .header-container {
@@ -1351,7 +1362,7 @@ h2 {
         padding-top: 0;
     }
 
-    #cssmenu{
+    #cssmenu {
         float: right;
     }
 
@@ -1368,15 +1379,17 @@ h2 {
     }
 
     #banner {
-       height: 80vh;
+        height: 80vh;
     }
 
     h2 {
         padding-bottom: 5px;
     }
 
+    .project-tit{
+        margin-top: -15vh;
+    }
 
- 
 
     #case {
         display: block;
@@ -1386,7 +1399,7 @@ h2 {
         padding-top: 15px;
     }
 
-    .case{
+    .case {
         display: none;
     }
 
@@ -1395,7 +1408,7 @@ h2 {
         height: fit-content;
     }
 
-    .case-tit{
+    .case-tit {
         font-size: 1.5rem;
     }
 
@@ -1419,7 +1432,7 @@ h2 {
     .service-item {
         font-size: 1.2rem;
     }
- 
+
 
 
     #intro-area-bg {
@@ -1443,7 +1456,7 @@ h2 {
 
     }
 
-    .photo{
+    .photo {
         width: 100%;
     }
 
@@ -1496,15 +1509,15 @@ h2 {
         padding-bottom: 15px;
     }
 
-    .job-title{
+    .job-title {
         font-size: 1.5rem;
     }
 
-    .idea{
+    .idea {
         font-size: 1.8rem;
     }
 
-    .slogan{
+    .slogan {
         font-size: 1.5rem;
     }
 
@@ -1555,7 +1568,7 @@ h2 {
     }
 
     /*內頁*/
-    
+
 
     #inside-logo {
         font-weight: bolder;
@@ -1569,26 +1582,31 @@ h2 {
 
     }
 
-    .wrapper{
+    .wrapper {
         display: none;
     }
 
-    #m-project{
+    #m-project {
         display: block;
     }
-    .project-box{
+
+    .project-box {
         width: 90%;
         margin: 50px auto;
     }
 
-    .project-box img{
-        border-radius: 5px;  
+    .project-box img {
+        border-radius: 5px;
     }
 
     /* 作品列表 */
+
     .project {
+        background:none;
         width: 100vmax;
+        height: 220px;
     }
+
 
     #project-info-area {
         width: 80vmin;
@@ -1617,8 +1635,6 @@ h2 {
     .back {
         display: none;
     }
-
-
 
     .back-m {
         display: block;
@@ -1666,19 +1682,19 @@ h2 {
         width: 90%;
     }
 
-    .job-title{
+    .job-title {
         text-align: center;
     }
 
-    .name{
+    .name {
         text-align: center;
     }
 
-    .idea{
+    .idea {
         text-align: center;
     }
 
-    .slogan{
+    .slogan {
         text-align: center;
     }
 
@@ -1689,20 +1705,20 @@ h2 {
 
 @media only screen and (max-width: 425px) {
 
-    .case-info{
+    .case-info {
         margin-bottom: -25vh;
     }
 
-    .case-box{
+    .case-box {
         padding-top: 18vh;
     }
 
 
-    .service{
+    .service {
         width: 35vmin;
     }
 
-    #footer{
+    #footer {
         padding-top: 0;
         margin-top: 1vh;
     }
