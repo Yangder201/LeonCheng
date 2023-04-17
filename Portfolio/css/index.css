@@ -460,7 +460,7 @@ section {
 
 #intro-area-bg {
     width: 100%;
-    height: 82vh;
+    height: 100vh;
     padding-top: 18vh;
     background: radial-gradient(ellipse at center, #3c3c3c, #2a2a2a);
 
@@ -1233,7 +1233,6 @@ h2 {
     padding: 8px 0;
     border-radius: 40px;
     cursor: default;
-
 }
 
 
@@ -1246,6 +1245,16 @@ h2 {
     display: none;
 }
 
+.contact{
+    max-width: 170px;
+}
+
+.mail{
+    color: #4edba5;
+}
+.mail:hover{
+    color: #21df41;
+}
 
 @media only screen and (max-width: 1440px) {
 
