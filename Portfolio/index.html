@@ -126,6 +126,7 @@
                     <li><a href="#case-area">作品</a></li>
                     <li><a href="#service-bg">服務</a></li>
                     <li><a href="#sop-bg">流程</a></li>
+                    <li><a href="#good-bg">客戶好評</a></li>
                     <li><a href="#intro-area-bg">關於</a></li>
                     <li><a href="#banner">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -149,6 +150,7 @@
                     <li><a href="index.html#case-area">作品</a></li>
                     <li><a href="#service-bg">服務</a></li>
                     <li><a href="#sop-bg">流程</a></li>
+                    <li><a href="#good-bg">客戶好評</a></li>
                     <li><a href="#intro-area-bg">關於</a></li>
                 </ul>
             </div>
@@ -307,7 +309,7 @@
 
 
     <div id="sop-bg">
-        <h2>服務<span style="color:#64b76f">流程</span></h2>
+        <h2 class="w">服務<span style="color:#64b76f">流程</span></h2>
 
         <div class="sop-group">
             <div class="sop-area">
@@ -400,7 +402,7 @@
             </div>
 
             <div class="next">
-                <a href="#intro-area-bg">
+                <a href="#good-bg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                         class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -412,6 +414,50 @@
         </div>
     </div>
 
+
+    <div id="good-bg">
+        <h2>客戶好評</h2>
+        <div class="good-area">
+            <div class="good-box">
+                <div class="good-tit">新莊劉宅,劉先生</div>
+                <svg class="icon">
+                    <use xlink:href="#stars-5-0-star">
+                  </svg>
+                <div class="good-info">
+                    設計師阿杰讓人很放心!<br>
+                    從一開始設計討論,到設計圖出來以後,還會親自到場監工這點我覺得很讚.<br>
+過程溝通也不會找不到人,到最後驗收的時候都親自處理,服務很好,很認真又負責任!<br>
+所以我願意推薦給大家,交給阿杰真的可以放心!
+                </div>
+            </div>
+
+            <div class="good-box">
+                <div class="good-tit">新莊呂宅，呂小姐</div>
+                <svg class="icon">
+                    <use xlink:href="#stars-5-0-star">
+                  </svg>
+                <div class="good-info">
+透過朋友介紹，鄭設計師是一個能夠提供很務實專業的建議的設計師，能夠給予很真誠的專業建議。
+也能很細心的考量細節跟執行，包含到未來十多年維護的部分都替我注意了。<br>
+鄭設計師可以很周到地幫我考慮到我沒注意的部分，像是我原本希望採用某種作法，
+他會提醒這樣的設計，未來可能會出現漏水問題等，幫我避免掉未來可能的麻煩。
+<br>
+因為我在執行方面就是比較不懂，而設計師能夠很誠實並全面幫我考量，這一點很重要。<br>
+不怕實話實說，不怕溝通給予真誠的建議，讓人很放心！<br>
+我會推薦有誠信、認真專業負責的杰境室內設計，可以放心找他設計。
+                </div>
+            </div>
+        </div>
+        <div class="next">
+            <a href="#intro-area-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                    class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
+                </svg>
+            </a>
+        </div>
+    </div>
 
 
 
@@ -434,7 +480,9 @@
                     <b>歡迎加 Line 諮詢</b>
                     <img src="img/lineme.jpg">
                 </div>
-                <a href="mailto:s.jcheng1112@gmail.com" class="mail">或是透過 E-mail 與設計師聯絡</a>
+                <div class="mail">
+                    <a href="mailto:s.jcheng1112@gmail.com">或是透過 E-mail 與設計師聯絡</a>
+                </div>
 
             </div>
         </div>
@@ -485,6 +533,30 @@
         }
     </script>
 
+
+<!--星星評論-->
+<svg id="stars" style="display: none;" version="1.1">
+    <symbol id="stars-full-star" viewBox="0 0 102 18">
+      <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
+    </symbol>
+  
+    <symbol id="stars-half-star" viewBox="0 0 102 18">
+      <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792" fill="#e9ba26" />
+    </symbol>
+  
+    <symbol id="stars-all-star" viewBox="0 0 102 18">
+      <use xlink:href="#stars-full-star" />
+      <use xlink:href="#stars-full-star" transform="translate(21)" />
+      <use xlink:href="#stars-full-star" transform="translate(42)" />
+      <use xlink:href="#stars-full-star" transform="translate(63)" />
+      <use xlink:href="#stars-full-star" transform="translate(84)" />
+    </symbol>
+    
+        <symbol id="stars-5-0-star" viewBox="0 0 102 18">
+            <use xlink:href="#stars-all-star" fill="#e9ba26" />
+          </symbol>
+        
+    </svg>
 
 
     <script>
