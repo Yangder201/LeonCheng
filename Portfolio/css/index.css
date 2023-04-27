@@ -560,6 +560,12 @@ h2 {
     text-align: center;
 }
 
+.tit-en{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
 .left {
     text-align: left;
 }
@@ -743,7 +749,7 @@ h2 {
     width: 100%;
     height: fit-content;
     min-height: 85vh;
-    padding-top: 15vh;
+    padding-top: 12vh;
     background: #e7e7e7;
 }
 
