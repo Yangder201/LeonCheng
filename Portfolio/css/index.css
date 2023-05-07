@@ -567,8 +567,10 @@ h2 {
 
 .tit-en{
     font-size: 1.1rem;
-    font-weight: 500;
+    line-height: 1.8rem;
+    font-weight: 600;
     padding-top: 5px;
+    color: #a7a7a7;
 }
 
 .left {
@@ -628,7 +630,6 @@ h2 {
 
 .service {
     margin: 15px 10px;
-    height: 180px;
     margin-bottom: 20px;
     width: 20vmin;
     display: flex;
@@ -644,23 +645,29 @@ h2 {
 
 
 .service-icon {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    min-height: 120px;
+    height: auto;
     padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-icon img {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
 }
 
 .service-item {
-    max-width: 300px;
-    padding: 0 10px;
+    width: 140px;
+    min-height: 80px;
+    padding: 10px 5px;
     font-weight: bold;
     font-size: 1.2rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
     text-align: center;
+    color: #000000;
 }
 
 
