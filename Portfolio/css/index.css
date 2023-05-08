@@ -590,7 +590,7 @@ h2 {
 }
 
 .w {
-    color: #e4e4e4;
+    color: #ffffff;
 }
 
 
@@ -756,7 +756,7 @@ h2 {
     height: fit-content;
     min-height: 85vh;
     padding-top: 12vh;
-    background: #e7e7e7;
+    background-image: url(../img/good-area-bg.jpg);
 }
 
 .good-area{
@@ -774,7 +774,7 @@ h2 {
     border-radius: 10px;
     padding: 5%;
     background: #fff;
-    box-shadow: 5px 5px 15px #ccc;
+    box-shadow: 5px 7px 15px #85858569;
 }
 
 .good-tit{
