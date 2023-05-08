@@ -104,7 +104,7 @@ body {
 @media only screen and (max-width: 768px) {
   .block-call-to-action {
     margin-top: 75px;
-    height: 45vh;
+    height: 65vh;
   }
 
   .title{
@@ -124,7 +124,7 @@ body {
 
   .block-call-to-action {
     margin-top: 75px;
-    height: 40vh;
+    height: 60vh;
   }
 
   .block-call-to-action img{

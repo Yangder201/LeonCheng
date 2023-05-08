@@ -622,6 +622,8 @@ h2 {
 }
 
 .service-area {
+    max-width: 70vw;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -630,7 +632,6 @@ h2 {
 
 .service {
     margin: 15px 10px;
-    margin-bottom: 20px;
     width: 20vmin;
     display: flex;
     flex-wrap: wrap;
@@ -645,13 +646,7 @@ h2 {
 
 
 .service-icon {
-    width: 180px;
-    min-height: 120px;
-    height: auto;
-    padding: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 10px 0;
 }
 
 .service-icon img {
@@ -1357,6 +1352,11 @@ h2 {
         width: 15vmax;
     }
 
+    .service-icon img{
+        max-width: 180px;
+    }
+
+
     .sop-group {
         max-width: 70vmax;
     }
@@ -1520,7 +1520,7 @@ h2 {
     }
 
     #banner {
-        height: 80vh;
+        height: 95vh;
     }
 
     h2 {
@@ -1668,8 +1668,21 @@ h2 {
         height: fit-content;
     }
 
+    .service-area {
+        max-width: 98vw;
+        margin: auto;
+
+    }
+    
+
     .service {
         width: 30vmin;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .service-icon img{
+        max-width: 180px;
     }
 
 
