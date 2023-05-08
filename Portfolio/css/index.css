@@ -334,7 +334,7 @@ section {
 
 .case {
     width: 100vw;
-    height: 80vh;
+    height: 79vh;
     display: flex;
     gap: 5px;
 }
@@ -1347,6 +1347,10 @@ h2 {
         padding: 20px 0 5px 0;
     }
 
+    .service-area{
+        max-width: 80vw;
+    }
+
     .service {
         width: 15vmax;
     }
@@ -1443,7 +1447,7 @@ h2 {
     height: fit-content;
     min-height: 85vh;
     padding-top: 15vh;
-    background: #e7e7e7;
+    background-image: url(../img/good-area-bg.jpg);
 }
 
 .good-area{
