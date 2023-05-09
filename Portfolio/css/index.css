@@ -563,6 +563,7 @@ h2 {
     font-size: 2rem !important;
     font-weight: bold !important;
     text-align: center;
+    
 }
 
 .tit-en{
@@ -669,9 +670,8 @@ h2 {
     width: 100vmax;
     height: fit-content;
     margin: auto;
-    /* background: #383838; */
-    /* background: linear-gradient(to top, #d7d7d7, #e7e7e7); */
-    background: linear-gradient(to top,#404641, #637667);
+    /* background: linear-gradient(to top,#404641, #637667); */
+    background-image: url(../img/good-area-bg.jpg);
     min-height: 85vh;
     padding-top: 15vh;
 }
@@ -716,8 +716,11 @@ h2 {
     justify-content: space-evenly;
     padding: 10px 50px;
     /* border-radius: 7px; */
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 5px;
     box-shadow: 13px 13px 20px #4444443b;
     /* border-bottom: 2px solid #a9a9a9; */
     overflow: hidden;
