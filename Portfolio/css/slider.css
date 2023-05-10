@@ -4,7 +4,6 @@
 }
 
 body {
-  font-family: sans-serif;
   margin: 0;
 }
 .slide {
@@ -43,7 +42,7 @@ body {
 .title {
   font-size: 2rem;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 500;
   /* text-align: left; */
   z-index: 2;
   margin-top: 75vh;
@@ -53,7 +52,7 @@ body {
 }
 .below-title,
 .call-to-action {
-  font-weight: 500;
+  font-weight: 300;
   text-shadow: 3px 3px 15px #333333c0;
 }
 .below-title {
