@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     letter-spacing: 1px;
     overflow: overlay;
+    background: #f1f1f1;
 }
 
 
@@ -231,7 +232,6 @@ section {
 #banner {
     width: 100vw;
     height: 100vh;
-    background: #f1f1f1;
 }
 
 
