@@ -168,12 +168,13 @@ section {
     position: fixed;
     transition: 0.3s;
     margin-top: 0;
+    background: #ffffff1c;
 }
 
 
 .header-container {
     max-width: 90vw;
-    padding-top: 15px;
+    padding-top: 10px;
     margin: auto;
 }
 
@@ -758,7 +759,7 @@ h2 {
     width: 99%;
     text-align: center;
     padding: 8px;
-    color: rgb(187, 187, 187);
+    color: rgb(235, 235, 235);
 }
 
 
@@ -1720,24 +1721,25 @@ h2 {
     }
 
     .sop-area {
+        margin: 5px 15px;
         padding: 15px 10px;
     }
 
     .sop-num {
-        font-size: 100px;
+        font-size: 6rem;
         margin-left: -30px;
         font-weight: bold;
     }
 
     .sop-item {
-        width: 80%;
+        width: 60%;
         font-size: 1.6rem;
         line-height: 2.5rem;
     }
 
     .sop-detail {
-        width: 100%;
-        margin-left: 10%;
+        width: 60%;
+        margin-left: 15%;
         line-height: 2rem;
     }
 
