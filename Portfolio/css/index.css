@@ -676,7 +676,15 @@ h2 {
     background-image: url(../img/good-area-bg.jpg);
     background-attachment: fixed;
     min-height: 85vh;
-    padding-top: 15vh;
+
+}
+
+.process-bg{
+    width: 100vw;
+    height: 170px;
+    padding-top: 10vh;
+    background: url(../img/process.jpg);
+    margin-bottom: -80px;
 }
 
 #sop-bg2 {
@@ -821,7 +829,7 @@ h2 {
     color: #afafaf;
     text-align: center;
     position: relative;
-    margin-top: 15vh;
+    margin-top: 5vh;
 
 
 }
