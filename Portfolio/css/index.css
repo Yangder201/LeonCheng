@@ -719,13 +719,14 @@ h2 {
     justify-content: space-evenly;
     padding: 40px 50px;
     /* border-radius: 7px; */
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
     box-shadow: 13px 13px 20px #4444443b;
     /* border-bottom: 2px solid #a9a9a9; */
     overflow: hidden;
+    border-bottom: 3px solid #e1e1e1;
 }
 
 .sop-num {
@@ -749,7 +750,7 @@ h2 {
 }
 
 .sop-detail {
-    width: 40%;
+    width: 48%;
     font-size: 1.1rem;
     line-height: 30px;
     display: flex;
