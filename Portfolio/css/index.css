@@ -226,9 +226,9 @@ section {
 } */
 
 #banner {
-    max-width: 100%;
+    width: 100vw;
     height: 100vh;
-    
+    background: #f1f1f1;
 }
 
 
@@ -705,41 +705,49 @@ h2 {
 
 
 .sop-area {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     min-height: 50px;
     color: #363636;
     background: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 10px 50px;
+    padding: 40px 50px;
     /* border-radius: 7px; */
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     border-bottom-left-radius: 10px;
-    border-top-right-radius: 5px;
+    border-top-right-radius: 10px;
     box-shadow: 13px 13px 20px #4444443b;
     /* border-bottom: 2px solid #a9a9a9; */
     overflow: hidden;
 }
 
+.sop-num {
+    font-size: 100px;
+    margin-left: -50px;
+    font-weight: 600;
+    color: #bad3b9;
+}
+
 .sop-item {
-    width: 27%;
-    font-weight: 400;
-    font-size: 1.4rem;
+    width: 25%;
+    font-weight: 600;
+    font-size: 1.5rem;
     line-height: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
+    color: #54a173;
 
 }
 
 .sop-detail {
     width: 40%;
+    font-size: 1.1rem;
     line-height: 30px;
     display: flex;
     align-items: center;
