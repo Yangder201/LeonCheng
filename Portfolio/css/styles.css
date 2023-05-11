@@ -34,6 +34,7 @@
 #cssmenu {
   float: right;
   line-height: 1;
+  padding-top:10px;
 }
 
 #menu-line {
@@ -53,6 +54,7 @@
   float: left;
   border-radius: 3px;
 }
+
 
 #cssmenu.align-center>ul {
   font-size: 0;

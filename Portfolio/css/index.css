@@ -186,22 +186,18 @@ section {
 
 #logo {
     width: 20%;
-    padding-top: 20px;
-    margin-bottom: 15px;
+    padding-top: 30px;
+    margin-bottom: 5px;
     position: relative;
     z-index: 96;
     float: left;
     /* filter: drop-shadow(#333333d7 3px 5px 10px); */
-
     animation-name: loading;
     animation-duration: 0.5s;
-    /*動畫運作秒數*/
     animation-delay: .5s;
-    /*動畫延遲秒數*/
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
-    /*動畫結束停在最後一個影格上*/
 }
 
 #logo a {
