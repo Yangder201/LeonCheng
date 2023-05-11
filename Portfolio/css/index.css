@@ -68,11 +68,11 @@ section {
     display: none;
     position: fixed;
     right: 3%;
-    bottom: 5%;
-    border-radius: 5px;
-    background: #2e2e2ee2;
-    box-shadow: 5px 5px 25px #464646a8;
-    padding: 12px 15px;
+    bottom: 50px;
+    border-radius: 7px;
+    background: #0000002e;
+    box-shadow: 0px 2px 11px 0px #00000029;
+    padding: 12px 13px;
     color: white;
     cursor: pointer;
     z-index: 99;
@@ -80,7 +80,9 @@ section {
 }
 
 #gotop:hover {
-    opacity: .6;
+    bottom: 48px;
+    opacity: .8;
+    box-shadow: 0px 2px 11px 0px #d4d4d444;
 
 }
 
@@ -735,7 +737,7 @@ h2 {
 
 .sop-item {
     width: 25%;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.5rem;
     line-height: 30px;
     display: flex;
