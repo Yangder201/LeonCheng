@@ -174,7 +174,7 @@ section {
 
 .header-container {
     max-width: 90vw;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     margin: auto;
 }
 
@@ -187,8 +187,8 @@ section {
 
 #logo {
     width: 20%;
-    padding-top: 30px;
-    margin-bottom: 5px;
+    padding-top: 20px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 96;
     float: left;
@@ -831,7 +831,7 @@ h2 {
 
 #inside-banner {
     width: 100%;
-    min-height: 11vh;
+    min-height: 12vh;
     background: url(../img/banner-inside.jpg) no-repeat center;
     filter: brightness(0.6);
 }
