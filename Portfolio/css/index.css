@@ -467,29 +467,33 @@ section {
 #intro-area-bg {
     width: 100%;
     height: fit-content;
-    padding-top: 18vh;
-    background: radial-gradient(ellipse at center, #3c3c3c, #2a2a2a);
+    padding-top: 15vh;
+    background-image: url(../img/about-img.jpg);
+    background-color: #2a2a2a;
+    background-repeat: no-repeat;
+    /* background: radial-gradient(ellipse at center, #3c3c3c, #2a2a2a); */
 
 }
 
 .intro-area {
-    width: 65vmax;
-    margin: 20px auto 25px auto;
+    width: 65VW;
+    margin: 0 auto 0 auto;
     height: auto;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    clear: both;
+    /* clear: both; */
     color: #ffffff;
 }
 
 .photo {
     width: 50vmin;
+    height: 720px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    /* margin-bottom: -18px; */
+}
+
+.photo-m {
+   display: none;
 }
 
 .side {
@@ -1358,7 +1362,7 @@ h2 {
         min-height: 40vh;
         margin: 3vh auto 0 auto;
         height: auto;
-        padding: 0 0 2vh 0;
+        padding: 0;
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
@@ -1368,6 +1372,10 @@ h2 {
     backdrop-filter: blur(5px);
     border-radius: 10px; */
 
+    }
+
+    .photo{
+        height: 740px;
     }
 
     .info {
@@ -1419,7 +1427,6 @@ h2 {
     .case-info {
         margin-bottom: -40vh;
     }
-
 
 
 }
@@ -1517,6 +1524,10 @@ h2 {
 .icon{
     max-width: 150px;
     height: 30px;
+}
+
+#intro-area-bg{
+    background-position: -40%;
 }
 
 }
@@ -1617,8 +1628,10 @@ h2 {
         width: 100%;
         height: fit-content;
         padding-top: 100px;
-        background-repeat: no-repeat;
-        background-position: bottom right;
+        background-image: none;
+         background: radial-gradient(ellipse at center, #3c3c3c, #2a2a2a);
+ 
+
     }
 
 
@@ -1635,7 +1648,11 @@ h2 {
     }
 
     .photo {
-        width: 100%;
+        display: none;
+    }
+    
+    .photo-m {
+       display: block;
     }
 
     .side img {
