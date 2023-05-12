@@ -486,7 +486,6 @@ section {
 
 .photo {
     width: 50vmin;
-    height: 720px;
     display: flex;
     align-items: flex-end;
     /* margin-bottom: -18px; */
@@ -1374,9 +1373,6 @@ h2 {
 
     }
 
-    .photo{
-        height: 740px;
-    }
 
     .info {
         width: 40vmax;
