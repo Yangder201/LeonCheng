@@ -98,7 +98,7 @@ section {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background:#6abd74 !important;
+    background: #6abd74 !important;
 }
 
 .next {
@@ -492,7 +492,7 @@ section {
 }
 
 .photo-m {
-   display: none;
+    display: none;
 }
 
 .side {
@@ -567,10 +567,10 @@ h2 {
     font-size: 2rem !important;
     font-weight: 500 !important;
     text-align: center;
-    
+
 }
 
-.tit-en{
+.tit-en {
     font-size: 1.1rem;
     line-height: 1.8rem;
     font-weight: 400;
@@ -611,20 +611,28 @@ h2 {
     width: 100%;
     height: 85vh;
     padding-top: 15vh;
-    background: linear-gradient(to top, #1a1a1a, #3c3c3c);
+    /* background: linear-gradient(to top, #1a1a1a, #3c3c3c); */
+    background: #2b2b2b;
     background-attachment: fixed;
 
 }
 
+#service-tit-bg {
+    width: 250px;
+    margin: auto;
+    background: #2b2b2b;
+    z-index: 33;
+    position: relative;
+}
 
 .service-group {
     max-width: 100vmin;
-    /* margin-top: 5vh; */
-    height: 60vh;
-    margin: 5vh auto 0 auto;
-    /* padding: 20px 0 5px 0; */
-
+    height: 55vh;
+    padding: 8vh 10vw 5vh 10vw;
+    margin: -3vh auto 0 auto;
+    border: 2px solid #8dc095;
 }
+
 
 .service-area {
     max-width: 70vw;
@@ -682,7 +690,7 @@ h2 {
 
 }
 
-.process-bg{
+.process-bg {
     width: 100vw;
     height: 170px;
     padding-top: 10vh;
@@ -800,7 +808,7 @@ h2 {
 }
 
 
-#good-bg{
+#good-bg {
     width: 100%;
     height: fit-content;
     min-height: 85vh;
@@ -808,7 +816,7 @@ h2 {
     background-image: url(../img/good-area-bg.jpg);
 }
 
-.good-area{
+.good-area {
     max-width: 70vw;
     padding-bottom: 5vh;
     margin: auto;
@@ -817,7 +825,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.good-box{
+.good-box {
     margin: 2% auto;
     width: 60%;
     border-radius: 10px;
@@ -826,19 +834,19 @@ h2 {
     box-shadow: 5px 7px 15px #85858569;
 }
 
-.good-tit{
+.good-tit {
     font-size: 1.2rem;
     line-height: 1.8rem;
     padding: 10px 0;
 }
 
-.good-info{
+.good-info {
     font-size: 1.1rem;
     line-height: 2rem;
     padding: 10px 0;
 }
 
-.icon{
+.icon {
     max-width: 150px;
     height: 30px;
 }
@@ -1350,24 +1358,25 @@ h2 {
     display: none;
 }
 
-.contact{
+.contact {
     max-width: 170px;
 }
 
-.mail a{
+.mail a {
     color: #4edba5;
 }
-.mail a:hover{
+
+.mail a:hover {
     color: #21df41;
 }
 
 /* 選單 home icon*/
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 30
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 30
 }
 
 
@@ -1401,14 +1410,22 @@ h2 {
         width: 40vmax;
     }
 
-    .service-group {
-        max-width: 100vw;
+
+    #service-bg {
+        padding-top: 10vh;
         height: fit-content;
-        margin: auto;
-        padding: 20px 0 5px 0;
     }
 
-    .service-area{
+    .service-group {
+        max-width: 100vmin;
+        height: fit-content;
+        padding: 8vh 10vw 3vh 10vw;
+        margin: -5vh auto 0 auto;
+        border: 2px solid #8dc095;
+    }
+
+
+    .service-area {
         max-width: 80vw;
     }
 
@@ -1416,7 +1433,7 @@ h2 {
         width: 15vmax;
     }
 
-    .service-icon img{
+    .service-icon img {
         max-width: 100px;
     }
 
@@ -1455,6 +1472,14 @@ h2 {
 
 @media only screen and (max-width: 1024px) {
 
+    .service-group {
+        max-width: 100vmin;
+        height: fit-content;
+        padding: 8vh 5vw 3vh 5vw;
+        margin: -5vh auto 0 auto;
+        border: 2px solid #8dc095;
+    }
+
     .header-container {
         max-width: 90vmax;
     }
@@ -1487,6 +1512,7 @@ h2 {
     .info {
         width: 50vmax;
     }
+
     .project {
         background: none;
         width: 40vw;
@@ -1494,65 +1520,74 @@ h2 {
     }
 
 
-.contact{
-    margin: auto;
+    .contact {
+        margin: auto;
 
-}
-.mail{
-    text-align: center;
-}
-    
-#good-bg{
-    width: 100%;
-    height: fit-content;
-    min-height: 85vh;
-    padding-top: 15vh;
-    background-image: url(../img/good-area-bg.jpg);
-}
+    }
 
-.good-area{
-    max-width: 90vw;
-    padding-bottom: 5vh;
-    margin: auto;
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-}
+    .mail {
+        text-align: center;
+    }
 
-.good-box{
-    margin: 2% auto;
-    width: 80%;
-    border-radius: 10px;
-    padding: 5%;
-    background: #fff;
-    box-shadow: 5px 5px 15px #ccc;
-}
+    #good-bg {
+        width: 100%;
+        height: fit-content;
+        min-height: 85vh;
+        padding-top: 15vh;
+        background-image: url(../img/good-area-bg.jpg);
+    }
 
-.good-tit{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    padding: 10px 0;
-}
+    .good-area {
+        max-width: 90vw;
+        padding-bottom: 5vh;
+        margin: auto;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.good-info{
-    font-size: 1.1rem;
-    line-height: 1.7rem;
-    padding: 10px 0;
-}
+    .good-box {
+        margin: 2% auto;
+        width: 80%;
+        border-radius: 10px;
+        padding: 5%;
+        background: #fff;
+        box-shadow: 5px 5px 15px #ccc;
+    }
 
-.icon{
-    max-width: 150px;
-    height: 30px;
-}
+    .good-tit {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        padding: 10px 0;
+    }
 
-#intro-area-bg{
-    background-position: -40%;
-}
+    .good-info {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        padding: 10px 0;
+    }
+
+    .icon {
+        max-width: 150px;
+        height: 30px;
+    }
+
+    #intro-area-bg {
+        background-position: -40%;
+    }
 
 }
 
 
 @media only screen and (max-width: 768px) {
+
+    .service-group {
+        max-width: 80vmin;
+        height: fit-content;
+        padding: 8vh 1vw 1vh 1vw;
+        margin: -5vh auto 0 auto;
+        border: 2px solid #8dc095;
+    }
 
     section {
         height: fit-content;
@@ -1594,7 +1629,7 @@ h2 {
         padding-bottom: 5px;
     }
 
-    .project-tit{
+    .project-tit {
         margin-top: -15vh;
     }
 
@@ -1648,8 +1683,8 @@ h2 {
         height: fit-content;
         padding-top: 100px;
         background-image: none;
-         background: radial-gradient(ellipse at center, #3c3c3c, #2a2a2a);
- 
+        background: radial-gradient(ellipse at center, #3c3c3c, #2a2a2a);
+
 
     }
 
@@ -1669,9 +1704,9 @@ h2 {
     .photo {
         display: none;
     }
-    
+
     .photo-m {
-       display: block;
+        display: block;
     }
 
     .side img {
@@ -1746,7 +1781,7 @@ h2 {
         margin: auto;
 
     }
-    
+
 
     .service {
         width: 30vmin;
@@ -1754,7 +1789,7 @@ h2 {
         margin: 0;
     }
 
-    .service-icon img{
+    .service-icon img {
         max-width: 90px;
     }
 
@@ -1830,7 +1865,7 @@ h2 {
     /* 作品列表 */
 
     .project {
-        background:none;
+        background: none;
         width: 100vmax;
         height: 220px;
     }
