@@ -72,7 +72,7 @@ section {
     bottom: 50px;
     border-radius: 7px;
     background: #0000002e;
-    box-shadow: 0px 2px 11px 0px #00000029;
+    box-shadow: 5px 5px 10px -5px #00000073;
     padding: 12px 13px;
     color: white;
     cursor: pointer;
@@ -744,7 +744,7 @@ h2 {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-shadow: 13px 13px 20px #4444443b;
+    box-shadow: 13px 13px 20px -10px #4444444f;
     /* border-bottom: 2px solid #a9a9a9; */
     overflow: hidden;
     border-bottom: 3px solid #e1e1e1;
