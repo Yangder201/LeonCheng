@@ -628,8 +628,8 @@ h2 {
 .service-group {
     max-width: 100vmin;
     height: 55vh;
-    padding: 8vh 10vw 0 10vw;
-    margin: -3vh auto 0 auto;
+    padding: 8vh 10vw 3vh 10vw;
+    margin: -6vh auto 0 auto;
     border: 3px solid #48524a;
 }
 
