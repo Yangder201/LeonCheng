@@ -696,6 +696,7 @@ h2 {
     height: 170px;
     padding-top: 10vh;
     background: url(../img/process.jpg);
+    background-attachment: fixed;
     margin-bottom: -80px;
 }
 
