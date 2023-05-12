@@ -486,9 +486,10 @@ section {
 
 .photo {
     width: 50vmin;
+    height: 700px;
     display: flex;
     align-items: flex-end;
-    /* margin-bottom: -18px; */
+    
 }
 
 .photo-m {
