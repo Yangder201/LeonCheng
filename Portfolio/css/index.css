@@ -190,8 +190,7 @@ section {
 
 #logo {
     width: 20%;
-    padding-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 10px;
     position: relative;
     z-index: 96;
     float: left;
@@ -471,7 +470,7 @@ section {
     background-image: url(../img/about-img.jpg);
     background-color: #2a2a2a;
     background-repeat: no-repeat;
-    /* background: radial-gradient(ellipse at center, #3c3c3c, #2a2a2a); */
+    background-attachment: fixed
 
 }
 
@@ -1596,10 +1595,9 @@ h2 {
     }
 
     #header-fixed {
-        min-height: 65px;
+        min-height: 80px;
         background: #111111ef !important;
-        /* display: none; */
-        margin-top: -5px !important;
+
     }
 
     .header-container {
