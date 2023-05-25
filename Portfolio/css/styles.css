@@ -51,9 +51,10 @@
 }
 
 #cssmenu>ul>li {
-  float: left;
-  border-radius: 3px;
+  display: inline-block;
+  padding: 25px 30px 5px 30px;
 }
+
 
 
 #cssmenu.align-center>ul {
@@ -80,11 +81,9 @@
 
 #cssmenu>ul>li>a {
   text-align: center;
-  margin: 40px 30px 0 30px;
-  width: 70%;
+  width: 100%;
   font-size: 1rem;
   text-decoration: none;
-  text-transform: uppercase;
   color: #fffdfd;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;

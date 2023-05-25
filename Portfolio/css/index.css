@@ -213,25 +213,34 @@ section {
 
 }
 
-/* 
-@keyframes loading {
-    0% {
-        top: -30px;
-    }
 
-    50% {
-        top: 8px;
-    }
 
-    100% {
-        top: 12px;
-    }
-} */
 
-#banner {
-    width: 100vw;
-    height: 100vh;
+#cssmenu ul li:hover .menu-cn {
+    transform: translateY(-100%);
+    transition: transform 0.7s ease;
+    opacity: 0;
 }
+
+#cssmenu ul li:hover .menu-en {
+    transform: translateY(-100%);
+    transition: transform 0.7s ease;
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.menu-en {
+    opacity: 0;
+    margin-left: -50%;
+    margin-bottom: -100px;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+#cssmenu ul li:hover a {
+    transition: transform 0.3s ease;
+}
+
 
 
 #btn-area {
