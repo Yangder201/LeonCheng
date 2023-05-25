@@ -36,7 +36,10 @@ a:active {
     color: #fefefe51;
 }
 
-
+#cssmenu #menu-button {
+    display: none;
+  }
+  
 
 ::-webkit-scrollbar {
     width: 15px;
@@ -1593,6 +1596,10 @@ h2 {
 
 
 @media only screen and (max-width: 768px) {
+
+    .menu-en{
+        display: none;
+    }
 
     .service-group {
         max-width: 80vmin;

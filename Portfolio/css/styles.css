@@ -52,7 +52,7 @@
 
 #cssmenu>ul>li {
   display: inline-block;
-  padding: 25px 30px 5px 30px;
+  padding: 25px 10px 5px 10px;
 }
 
 
@@ -332,7 +332,7 @@
 
   #cssmenu #menu-button {
     display: block;
-    padding: 30px;
+    padding: 48px;
     color: #ffffff;
     cursor: pointer;
     font-size: 18px;
