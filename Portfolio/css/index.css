@@ -2,11 +2,11 @@
 
 body {
     font-size: 16px;
-    font-family: 'Noto Sans TC', 'Source Sans Pro', sans-serif;
+    font-family: 'Baloo 2', 'Noto Sans TC', sans-serif;
     color: rgb(68, 67, 67);
     max-width: 100%;
     overflow-x: hidden;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     background: #f1f1f1;
 }
 
@@ -585,10 +585,10 @@ h2 {
 }
 
 .tit-en {
-    font-size: 1rem;
-    line-height: 1.8rem;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     padding-top: 5px;
     color: #a7a7a7;
 }
@@ -997,8 +997,8 @@ h2 {
 }
 
 .project-info {
-    font-size: 1rem;
-    line-height: 50px;
+    font-size: 0.9rem;
+    line-height: 3rem;
     color: #555555;
 }
 
@@ -1034,25 +1034,23 @@ h2 {
 .project a {
     max-width: 300px;
     min-width: 100px;
+    opacity: 0.6;
     height: fit-content;
     transition: .5s;
     -webkit-transition: .5s;
 }
 
-.project:hover .box-btn {
+.project a:hover {
+    opacity: 1;
+}
+
+.project a:hover .box-btn {
     display: block;
     z-index: 1;
     position: relative;
-
+    opacity: 1;
 }
 
-.project:hover a img {
-    opacity: .6;
-}
-
-.project img {
-    box-shadow: 5px 5px 15px #e0e0e0c7;
-}
 
 .project-tit {
     margin-top: -20vh;
@@ -1061,7 +1059,12 @@ h2 {
     font-weight: 500;
     color: #ffffff;
     text-shadow: 3px 3px 10px #555555;
+    opacity: 1;
+}
 
+.project:hover .project-tit {
+    opacity: 0;
+    transition-duration: .2s;
 }
 
 .box-tit {
