@@ -1652,7 +1652,7 @@ h2 {
     }
 
     .project-tit {
-        margin-top: -15vh;
+        margin-top: -40%;
     }
 
 
@@ -1854,7 +1854,6 @@ h2 {
 
     /*內頁*/
 
-
     #inside-logo {
         font-weight: bolder;
         padding: 15px;
@@ -1884,6 +1883,9 @@ h2 {
         border-radius: 5px;
     }
 
+
+    
+
     /* 作品列表 */
 
     .project {
@@ -1892,6 +1894,14 @@ h2 {
         height: 220px;
     }
 
+    .project a {
+        max-width: 300px;
+        min-width: 100px;
+        opacity: 1;
+        height: fit-content;
+        transition: .5s;
+        -webkit-transition: .5s;
+    }
 
     #project-info-area {
         width: 80vmin;
@@ -1932,7 +1942,6 @@ h2 {
         align-items: center;
         text-align: center;
         border-radius: 5px;
-        font-size: 1.2rem;
         background: #3d3d3d;
         border: 1px solid rgb(212 212 212);
     }
@@ -1947,7 +1956,7 @@ h2 {
         align-items: center;
         text-align: center;
         color: #9c9c9c;
-
+        font-size: 1rem;
     }
 
 
