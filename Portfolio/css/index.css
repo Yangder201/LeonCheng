@@ -73,18 +73,19 @@ section {
     right: 3%;
     bottom: 50px;
     border-radius: 7px;
-    background: #0000002e;
-    box-shadow: 5px 5px 10px -5px #00000073;
+    background: #ffffffa3;
+    box-shadow: 4px 6px 19px 0px #7d7a7a82;
     padding: 12px 13px;
-    color: white;
+    color: #5f5f5f;
     cursor: pointer;
     z-index: 99;
-    border: #7e7e7e 2px solid;
+    border: #ffffff 2px solid;
 }
 
 #gotop:hover {
     bottom: 48px;
     opacity: .8;
+    background: #ffffffeb;
     box-shadow: 0px 2px 11px 0px #d4d4d444;
 
 }
@@ -552,7 +553,7 @@ section {
 .text {
     margin-top: 15px;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 2rem;
 }
 
