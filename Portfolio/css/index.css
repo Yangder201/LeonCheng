@@ -40,19 +40,21 @@ a:active {
   }
   
 
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 15px;
     background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    padding: 8px;
-    margin: 8px;
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgb(255 255 255 / 32%);
     border-radius: 999px;
     border: 5px solid transparent;
     background-clip: content-box;
 
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #636363;
 }
 
 img {
@@ -221,20 +223,18 @@ section {
 
 
 #cssmenu ul li:hover .menu-cn {
-
     transition: transform 0.3s ease, opacity .3s ease-out;
     opacity: 0;
 }
 
 #cssmenu ul li:hover .menu-en {
-  
     transition: transform 0.3s ease, opacity .3s ease-out;
     opacity: 1;
 }
 
 .menu-en {
     opacity: 0;
-    margin-left: -50%;
+    margin-left: -40%;
     font-weight: 200;
     font-size: 1rem;
 }
@@ -243,7 +243,10 @@ section {
     transition: transform 0.3s ease, opacity .3s ease-out;
 }
 
-
+.menubtn{
+    background: #e7e7e717;
+    transition: 1s
+}
 
 #btn-area {
     width: 100%;
@@ -869,20 +872,16 @@ h2 {
 }
 
 
-/*首頁f*/
 #footer {
     width: 100%;
-    min-height: 50px;
-    padding-top: 30px;
+    min-height: 20px;
     margin: auto;
     font-size: .8rem;
     letter-spacing: 2px;
     color: #afafaf;
     text-align: center;
     position: relative;
-    margin-top: 5vh;
-
-
+    margin-top: 2vh;
 }
 
 
