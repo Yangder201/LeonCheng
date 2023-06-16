@@ -899,19 +899,22 @@ h2 {
 
 
 #inside-main {
-    max-width: 80vmax;
+    max-width: 100vw;
     height: fit-content;
-    margin: 50px auto;
+    padding-top: 50px;
     line-height: 30px;
+    background: #333;
+    color: #fff;
 
 }
 
 
 #project-area {
-    max-width: 80vmax;
-    height: fit-content;
+    max-width: 80vw;
+    height: 71vh;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     line-height: 30px;
     color: #303030;
@@ -919,6 +922,20 @@ h2 {
 
 #project-info-area {
     width: 20vmin;
+    color: #fff;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 50px;
+
+}
+
+.project-info {
+    font-size: 0.9rem;
+    line-height: 3rem;
+
 }
 
 #project-main {
@@ -955,8 +972,8 @@ h2 {
 
 .back a:hover {
     text-decoration: none;
-    color: #ffffff;
-    background: #1b1b1b;
+    color: #303030;
+    background: #ffffff;
     border-radius: 3px;
 }
 
@@ -990,18 +1007,7 @@ h2 {
 
 }
 
-.project-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding-bottom: 50px;
-    color: #474747;
-}
 
-.project-info {
-    font-size: 0.9rem;
-    line-height: 3rem;
-    color: #555555;
-}
 
 .insdie-text li::before {
     content: '▪　';
@@ -1595,6 +1601,12 @@ h2 {
         background-position: -40%;
     }
 
+
+    #project-area {
+        flex-wrap: wrap;
+        width: 100%;
+        height: fit-content;
+    }
 }
 
 
@@ -1917,6 +1929,7 @@ h2 {
     #project-area {
         flex-wrap: wrap;
         width: 100%;
+        height: fit-content;
     }
 
     .project-title {
