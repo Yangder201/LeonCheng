@@ -177,7 +177,9 @@ section {
     position: fixed;
     transition: 0.3s;
     margin-top: 0;
-    background: #ffffff0f;
+    background: #ffffff14;
+    backdrop-filter: blur(3px);
+    
 }
 
 
