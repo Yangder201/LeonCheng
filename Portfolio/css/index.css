@@ -1069,6 +1069,7 @@ h2 {
     color: #ffffff;
     text-shadow: 3px 3px 10px #555555;
     opacity: 1;
+    cursor: pointer;
 }
 
 .project:hover .project-tit {
@@ -1495,7 +1496,16 @@ h2 {
 }
 
 
+#inside-main {
+    max-width: 100vw;
+    height: fit-content;
+    min-height: 90vh;
+    padding-top: 50px;
+    line-height: 30px;
+    background: #333;
+    color: #fff;
 
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -1542,8 +1552,9 @@ h2 {
 
     .project {
         background: none;
-        width: 40vw;
+        width: 35vw;
         height: 300px;
+        margin: 10px;
     }
 
 
@@ -1905,8 +1916,9 @@ h2 {
 
     .project {
         background: none;
-        width: 100vmax;
-        height: 220px;
+        width: 30vw;
+        height: 150px;
+        margin: 10px;
     }
 
     .project a {
@@ -2013,7 +2025,18 @@ h2 {
 
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
+
+    h2{
+        margin-bottom: 15px;
+    }
+
+    .project {
+        background: none;
+        width: 90vw;
+        height: 200px;
+        margin: 10px;
+    }
 
     .case-info {
         margin-bottom: -25vh;
