@@ -88,15 +88,20 @@ body {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #ffffff !important;
+    width: 80px !important;
+    height: 3px !important;
+    
     
 }
 
 
+
 .owl-theme .owl-dots .owl-dot span{
-    width: 100px !important;
+    width: 50px !important;
     height: 3px !important;
     background: #ffffff3f !important;
     border-radius: 3px !important;
+    transition: .3s .1s !important;
 }
 
 .owl-theme .owl-dots .owl-dot span{
