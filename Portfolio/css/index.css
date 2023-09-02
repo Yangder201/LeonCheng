@@ -392,7 +392,7 @@ section {
 .case .item:hover {
     flex: 4 1;
     border-radius: 15px;
-    border: #ffffff24 7px solid;
+    border: #171717a6 7px solid;
     transition: .4s ease-in-out;
 }
 
