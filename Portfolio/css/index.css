@@ -704,7 +704,7 @@ h2 {
 }
 
 .service-icon img {
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
 }
 
@@ -733,11 +733,11 @@ h2 {
 
 .process-bg {
     width: 100vw;
-    height: 170px;
-    padding-top: 10vh;
+    height: 200px;
+    padding-top: 13vh;
     background: url(../img/process.jpg);
     background-attachment: fixed;
-    margin-bottom: -80px;
+    margin-bottom: -100px;
 }
 
 #sop-bg2 {
