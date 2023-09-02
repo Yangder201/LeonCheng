@@ -87,7 +87,7 @@ body {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #000000 !important;
+    background: #ffffff !important;
     
 }
 
@@ -95,7 +95,7 @@ body {
 .owl-theme .owl-dots .owl-dot span{
     width: 100px !important;
     height: 3px !important;
-    background: #ffffff6b !important;
+    background: #ffffff3f !important;
     border-radius: 3px !important;
 }
 
