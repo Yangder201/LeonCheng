@@ -344,7 +344,7 @@ section {
 }
 
 .case {
-    width: 85vw;
+    width: 80vw;
     height: 70vh;
     display: flex;
     gap: 7px;
