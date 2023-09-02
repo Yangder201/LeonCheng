@@ -102,10 +102,6 @@ section {
 }
 
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-    background: #6abd74 !important;
-}
 
 .next {
     width: 80px;
@@ -348,17 +344,17 @@ section {
 }
 
 .case {
-    width: 90vw;
+    width: 85vw;
     height: 70vh;
     display: flex;
-    gap: 5px;
+    gap: 7px;
     margin: auto;
 }
 
 
 .case .item {
     flex: 1 1;
-    border-radius: 8px;
+    border-radius: 6px;
     background-size: cover;
     background-position: center;
     display: flex;

@@ -85,16 +85,23 @@ body {
 }
 
 
-
-
-.owl-theme .owl-dots .owl-dot span{
-    width: 40px !important;
-    height: 3px !important;
-    background: #ffffff6b !important;
-    border-radius: 0 !important;
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #000000 !important;
+    
 }
 
 
+.owl-theme .owl-dots .owl-dot span{
+    width: 100px !important;
+    height: 3px !important;
+    background: #ffffff6b !important;
+    border-radius: 3px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  margin: 5px 2px !important;
+}
 
 
 @media only screen and (max-width: 1440px) {
