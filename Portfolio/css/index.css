@@ -173,10 +173,10 @@ section {
     position: fixed;
     transition: 0.3s;
     margin-top: 0;
-    background: rgba(255,255,255,0.20);
+    background: rgb(255 255 255 / 7%);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-    border-bottom: 1px solid rgba(255,255,255,0.13);
+    /* border-bottom: 1px solid rgba(255,255,255,0.13); */
     
 }
 
