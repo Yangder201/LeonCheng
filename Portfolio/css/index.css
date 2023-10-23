@@ -173,8 +173,10 @@ section {
     position: fixed;
     transition: 0.3s;
     margin-top: 0;
-    background: #ffffff14;
-    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.20);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(255,255,255,0.13);
     
 }
 
@@ -345,7 +347,7 @@ section {
 }
 
 .case {
-    width: 90vw;
+        width: 90vw;
     height: 75vh;
     display: flex;
     gap: 7px;
@@ -522,8 +524,8 @@ section {
 }
 
 .photo {
-    width: 50vmin;
-    height: 700px;
+    width: 55vmin;
+    /* height: 700px; */
     display: flex;
     align-items: flex-end;
     
@@ -549,10 +551,11 @@ section {
 }
 
 .info {
-    width: 50vmin;
+    width: 42vw;
     line-height: 2.5rem;
     padding-top: 50px;
     list-style-type: none;
+    margin-left: 9vw;
 }
 
 .r-side {
@@ -898,7 +901,6 @@ h2 {
     font-size: .8rem;
     letter-spacing: 2px;
     color: #afafaf;
-    text-align: center;
     position: relative;
     margin-top: 2vh;
 }
@@ -1407,6 +1409,10 @@ h2 {
     max-width: 170px;
 }
 
+.contact img {
+    max-width: 80%;
+
+}
 .mail a {
     color: #4edba5;
 }
