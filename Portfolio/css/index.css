@@ -1729,6 +1729,16 @@ h2 {
         margin: 15px;
     }
 
+
+    
+    #project-info-area {
+        width: 20vw;
+        position: fixed;
+        top: 15vh;
+        left: 3vw;
+    }
+
+
 }
 
 
@@ -2042,6 +2052,9 @@ h2 {
         width: 80vmin;
         margin: auto;
         padding-bottom: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     #project-main {
