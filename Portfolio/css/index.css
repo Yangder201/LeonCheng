@@ -949,6 +949,9 @@ h2 {
 #project-info-area {
     width: 20vmin;
     color: #fff;
+    position: fixed;
+    left: 5vw;
+    top: 20vh;
 }
 
 .project-title {
@@ -968,7 +971,7 @@ h2 {
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: flex-end;
 }
 
 
