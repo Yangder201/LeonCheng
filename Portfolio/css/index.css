@@ -985,9 +985,50 @@ h2 {
     border-radius: 5px;
     overflow: hidden;
     margin: 0 10px 50px 30px;
+    position: relative;
+    transition: .3s ease-out;
+    -webkit-transition: .3s;
 }
 
 
+.project-img a:hover img {
+    opacity: .7;
+    transition: .5s ease-out;
+}
+
+
+.project-img:hover::after {
+    content: '點擊放大';
+    font-size: 1.125rem;
+    font-weight: 500;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    color: #ffffff;
+    background: rgba(54, 54, 54, 0.081);
+    border-top: 1px solid #ffffff32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5px; */
+    width: 100%;
+    height: 18%;
+    position: absolute;
+    /* top: 33%;
+    left: 28%; */
+    bottom: 0;
+    left: 0;
+
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 .back {
     width: 120px;
@@ -1018,8 +1059,9 @@ h2 {
 
 .back a:hover {
     text-decoration: none;
-    color: #303030;
-    background: #ffffff;
+    border: 0;
+    color: #efefef;
+    background: rgb(19, 91, 74);
     border-radius: 3px;
 }
 
@@ -1727,12 +1769,12 @@ h2 {
 
     .project-img {
         width: 90%;
-        max-height: 210px;
+        max-height: fit-content;
         overflow: hidden;
         border-radius: 5px;
-        margin: 15px;
-    }
+        margin: 15px 5px 15px 25px;
 
+    }
 
     
     #project-info-area {
