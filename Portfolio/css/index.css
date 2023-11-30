@@ -972,10 +972,11 @@ h2 {
 }
 
 #project-main {
-    width: 70vw;
+    width: 75vw;
+    margin-left: 10vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 
@@ -1640,6 +1641,10 @@ h2 {
 
     }
 
+    #project-main{
+        margin-left: 20vw;
+    }
+
 
     .project-img {
         width: 44%;
@@ -1765,6 +1770,10 @@ h2 {
         flex-wrap: wrap;
         width: 100%;
         height: fit-content;
+    }
+
+    #project-main{
+        margin-left: 20vw;
     }
 
     .project-img {
@@ -2220,6 +2229,11 @@ h2 {
         overflow: hidden;
         margin: 15px;
     }
+
+    #project-main{
+        margin-left: 2vw;
+    }
+
 
     .case-info {
         margin-bottom: -25vh;
