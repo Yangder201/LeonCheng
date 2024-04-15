@@ -152,7 +152,7 @@ section {
 
 .next-btn {
     position: absolute;
-    bottom: 0;
+    top: 88vh;
     left: 48.5vw;
     z-index: 999;
     color: #ffffff;
@@ -441,14 +441,15 @@ section {
 } */
 
 #header-fixed {
-    width: 86vw;
+    width: 80vw;
+    border: 2px solid #ffffff24;
     margin-top: 3vh;
-    margin-left: 5vw;
+    margin-left: 8vw;
     padding: 0 2vw;
     border-radius: 50px;
-    box-shadow: 5px 5px 20px -5px #3131318a;
+    box-shadow: -16px 1px 0px -5px #dfdfdf96;
     z-index: 99;
-    height: 80px;
+    height: 70px;
     position: fixed;
     transition: 0.3s;
     background: rgb(255 255 255 / 10%);
@@ -474,7 +475,7 @@ section {
 
 #logo {
     width: 20%;
-    padding-top: 10px;
+    padding-top: 5px;
     position: relative;
     z-index: 96;
     float: left;
@@ -2017,6 +2018,7 @@ h2 {
 
     .mail {
         text-align: center;
+        height: 100px;
     }
 
     #good-bg {
@@ -2256,15 +2258,10 @@ h2 {
     }
 
     .text li {
-        list-style-type: none;
+        list-style-type: square;
         margin-left: 5px;
     }
 
-    .text li::before {
-        content: '▪　';
-        font-weight: bold;
-        color: #797979;
-    }
 
     .side {
         width: 100%;
@@ -2540,6 +2537,19 @@ h2 {
     }
 
 
+    .next-btn{
+        position: absolute;
+        top: 75vh;
+        left: 44vw;
+        z-index: 999;
+        color: #ffffff;
+    }
+
+    .next-btn2{
+        display: none;
+    }
+
+
     .case-info {
         margin-bottom: -25vh;
     }
@@ -2553,8 +2563,17 @@ h2 {
         width: 35vmin;
     }
 
+
+    
+    .text li {
+        list-style-type: square;
+        margin-left: -10px;
+    }
+
+
     #footer {
         padding-top: 0;
-        margin-top: 1vh;
+        text-align: center;
+        width: 90%;
     }
 }
