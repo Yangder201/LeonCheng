@@ -33,6 +33,7 @@
 
 #cssmenu {
   float: right;
+  margin-right: 10vw;
   line-height: 1;
   /* padding-top:10px; */
 }
@@ -249,9 +250,9 @@
 
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 769px) {
   #cssmenu {
-    width: 100%;
+    width: 50%;
     margin-top: -55px;
   
   }
