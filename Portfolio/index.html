@@ -20,8 +20,10 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
     <!--home icon-->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -37,10 +39,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- skrollr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"
+        integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
- 
+
     <!--go to top js-->
     <script type="text/javascript">
         $(function () {
@@ -57,11 +61,11 @@
                 }
             });
         });
-    </script>
 
 
-    <!-- 錨點滑動 -->
-    <script>
+
+        //錨點滑動
+
         $(document).ready(function () {
             $("a").on("click", function (event) {
                 if (this.hash !== "") {
@@ -77,33 +81,55 @@
                 }
             });
         });
-    </script>
 
-    <!-- 當前按鈕 -->
-    <script>
-        $(document).ready(function () {
-            $('ul li a').click(function () {
-                $('li a').removeClass("active");
-                $(this).addClass("active");
-            });
-        });
+        //當前按鈕 
+        // $(document).ready(function () {
+        //     $('ul li a').click(function () {
+        //         $('li a').removeClass("active");
+        //         $(this).addClass("active");
+        //     });
+        // });
+
+
+        //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
+        // window.addEventListener('scroll', function () {
+        //     var scrollPosition = window.scrollY;
+        //     var menuItems = document.querySelectorAll('#cssmenu ul li a');
+
+        //     menuItems.forEach(function (item) {
+        //         var sectionId = item.getAttribute('href').substring(1);
+        //         var section = document.getElementById(sectionId);
+        //         if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+        //             removeFocusFromMenuItems(menuItems);
+        //             item.parentNode.classList.add('focus');
+        //         } else {
+        //             item.parentNode.classList.remove('focus');
+        //         }
+        //     });
+        // });
+
+        // function removeFocusFromMenuItems(menuItems) {
+        //     menuItems.forEach(function (item) {
+        //         item.parentNode.classList.remove('focus');
+        //     });
+        // }
     </script>
 
     <script type="text/javascript">
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 700) {
-                document.getElementById("header-fixed").style.background = 'linear-gradient(to right, #1a1a1a, #3c3c3c91)';
-                document.getElementById("header-fixed").style.marginTop = '-10px';
-                document.getElementById("logo").style.marginTop = '10px';
+                document.getElementById("header-fixed").style.background = '#ffffff0f';
+                document.getElementById("header-fixed").style.marginTop = '1vh';
+                document.getElementById("logo").style.marginTop = '5px';
                 document.getElementById("logoimg").style.maxWidth = '130px';
 
             }
 
             else {
                 document.getElementById("header-fixed").style.background = '#ffffff0f';
-                document.getElementById("header-fixed").style.marginTop = '0';
-                document.getElementById("logoimg").style.maxWidth = '160px';
+                document.getElementById("header-fixed").style.marginTop = '2vh';
+                document.getElementById("logoimg").style.maxWidth = '150px';
                 document.getElementById("logo").style.marginTop = '0';
                 $('li a').removeClass("active");
 
@@ -111,7 +137,7 @@
         }
     </script>
 
- 
+
 </head>
 
 <body>
@@ -165,7 +191,7 @@
                             </span>
                         </a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -208,23 +234,24 @@
                     <p class="below-title">住宅室內設計｜辦公室裝修｜老屋翻修，歡迎來諮詢</p>
             </div>
         </div>
-        <div class="next">
+
+        <div class="next-btn">
             <a href="#case-area">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-                </svg>
+                <div class="mouse2"></div>
+                <div class="mouse"></div>
             </a>
         </div>
+
+
     </div>
 
 
 
     <div id="case-area">
-        <h2>作品
+        <h2 class="light">作品
             <div class="tit-en">Work</div>
         </h2>
+
         <div class="case">
             <div class="item item1">
                 <a href="project002.html">
@@ -249,6 +276,13 @@
                 <a href="project004.html">
                     <div class="case-tit">新莊呂宅</div>
                     <div class="case-info">27 坪</div>
+                </a>
+            </div>
+
+            <div class="next-btn">
+                <a href="#service-bg">
+                    <div class="mouse4"></div>
+                    <div class="mouse3"></div>
                 </a>
             </div>
 
@@ -283,21 +317,22 @@
                 </a>
             </div>
 
+            <div class="next-btn">
+                <a href="#service-bg">
+                    <div class="mouse2"></div>
+                    <div class="mouse"></div>
+                </a>
+            </div>
+
         </div>
 
-        
-        <div class="next">
-            <a href="#service-bg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-                </svg>
-            </a>
-        </div>
-    </div>
+
+
+
 
     </div>
+
+
 
 
     <div id="service-bg">
@@ -343,15 +378,14 @@
                 </div>
             </div>
         </div>
-        <div class="next">
+
+        <div class="next-btn">
             <a href="#sop-bg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-                </svg>
+                <div class="mouse2"></div>
+                <div class="mouse"></div>
             </a>
         </div>
+
     </div>
 
 
@@ -477,13 +511,10 @@
                 </div>
             </div>
 
-            <div class="next">
-                <a href="#intro-area-bg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-                    </svg>
+            <div class="next-btn">
+                <a href="#sop-bg">
+                    <div class="mouse4"></div>
+                    <div class="mouse3"></div>
                 </a>
             </div>
 
@@ -573,75 +604,74 @@
                 </div>
                 <div id="footer" style="margin-top: 8vh">杰境室內設計 © S.J. Interior Design</div>
             </div>
-           
-            
-          
+
+
+
         </div>
-        
+
     </div>
-    
 
 
-        <!--Banner Slider-->
-        <link href="css/slider.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-            rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-            rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-            type="text/javascript"></script>
+
+    <!--Banner Slider-->
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        type="text/javascript"></script>
 
 
-        <script>
-            carousal();
+    <script>
+        carousal();
 
-            function carousal() {
-                $("#banner-slider-demo-17").owlCarousel({
-                    items: 1,
-                    autoplay: true,
-                    autoplayTimeout: 5000,
-                    nav: false,
-                    dots: true,
-                    navRewind: true,
-                    animateIn: 'fadeIn',
-                    animateOut: 'fadeOut',
-                    loop: true
-                    
-                });
-            }
-        </script>
+        function carousal() {
+            $("#banner-slider-demo-17").owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                nav: false,
+                dots: true,
+                navRewind: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                loop: true
 
-
-        <!--星星評論svg-->
-        <svg id="stars" style="display: none;" version="1.1">
-            <symbol id="stars-full-star" viewBox="0 0 102 18">
-                <path
-                    d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
-            </symbol>
-
-            <symbol id="stars-half-star" viewBox="0 0 102 18">
-                <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792" fill="#e9ba26" />
-            </symbol>
-
-            <symbol id="stars-all-star" viewBox="0 0 102 18">
-                <use xlink:href="#stars-full-star" />
-                <use xlink:href="#stars-full-star" transform="translate(21)" />
-                <use xlink:href="#stars-full-star" transform="translate(42)" />
-                <use xlink:href="#stars-full-star" transform="translate(63)" />
-                <use xlink:href="#stars-full-star" transform="translate(84)" />
-            </symbol>
-
-            <symbol id="stars-5-0-star" viewBox="0 0 102 18">
-                <use xlink:href="#stars-all-star" fill="#e9ba26" />
-            </symbol>
-
-        </svg>
+            });
+        }
+    </script>
 
 
-        <script>
-            AOS.init();
-        </script>
+    <!--星星評論svg-->
+    <svg id="stars" style="display: none;" version="1.1">
+        <symbol id="stars-full-star" viewBox="0 0 102 18">
+            <path
+                d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
+        </symbol>
+
+        <symbol id="stars-half-star" viewBox="0 0 102 18">
+            <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792" fill="#e9ba26" />
+        </symbol>
+
+        <symbol id="stars-all-star" viewBox="0 0 102 18">
+            <use xlink:href="#stars-full-star" />
+            <use xlink:href="#stars-full-star" transform="translate(21)" />
+            <use xlink:href="#stars-full-star" transform="translate(42)" />
+            <use xlink:href="#stars-full-star" transform="translate(63)" />
+            <use xlink:href="#stars-full-star" transform="translate(84)" />
+        </symbol>
+
+        <symbol id="stars-5-0-star" viewBox="0 0 102 18">
+            <use xlink:href="#stars-all-star" fill="#e9ba26" />
+        </symbol>
+
+    </svg>
+
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
