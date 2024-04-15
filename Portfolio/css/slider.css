@@ -8,6 +8,7 @@ body {
 }
 .slide {
   grid-area: slide;
+  
 }
 .block-call-to-action {
   background-color: #fff;
@@ -40,14 +41,14 @@ body {
   position: absolute;
 }
 .title {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: bold;
   /* text-align: left; */
   z-index: 2;
   margin-top: 75vh;
-  margin-left: 3vw;
-  margin-bottom: 2vh;
+  margin-left: 5vw;
+  margin-bottom: 3vh;
   text-shadow: 3px 3px 15px #525252c0;
 }
 .below-title,
@@ -56,11 +57,13 @@ body {
   text-shadow: 3px 3px 15px #333333c0;
 }
 .below-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
   line-height: 1.3;
-  margin-bottom: 25px;
+  margin-bottom: 5vh;
   z-index: 2;
-  margin-left: 3vw;
+  margin-left: 5vw;
+  text-shadow: -1px 2px 8px #2f2f2f;
 }
 .btn {
   cursor: pointer;
