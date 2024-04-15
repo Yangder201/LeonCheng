@@ -121,7 +121,9 @@
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 700) {
                 document.getElementById("header-fixed").style.background = '#ffffff0f';
                 document.getElementById("header-fixed").style.marginTop = '1vh';
-                document.getElementById("logo").style.marginTop = '5px';
+                document.getElementById("header-fixed").style.height = '66px';
+                document.getElementById("header-fixed").style.boxShadow ='-16px 2px 0px -5px #dfdfdf96';
+                document.getElementById("logo").style.marginTop = '0';
                 document.getElementById("logoimg").style.maxWidth = '130px';
 
             }
@@ -129,6 +131,8 @@
             else {
                 document.getElementById("header-fixed").style.background = '#ffffff0f';
                 document.getElementById("header-fixed").style.marginTop = '2vh';
+                document.getElementById("header-fixed").style.height = '70px';
+                document.getElementById("header-fixed").style.boxShadow ='-16px 1px 0px -5px #dfdfdf96';
                 document.getElementById("logoimg").style.maxWidth = '150px';
                 document.getElementById("logo").style.marginTop = '0';
                 $('li a').removeClass("active");
@@ -281,16 +285,15 @@
 
             <div class="next-btn">
                 <a href="#service-bg">
-                    <div class="mouse4"></div>
-                    <div class="mouse3"></div>
+                    <div class="mouse2"></div>
+                    <div class="mouse"></div>
                 </a>
             </div>
 
         </div>
 
-
+        <!-- 手機板 -->
         <div id="case">
-
             <div class="case-box" data-aos="fade-up"><a href="project002.html">
                     <div class="case-tit">新莊唐宅</div>
                     <div class="case-info">2019</div>
@@ -316,16 +319,8 @@
                     <img src="img/case004.png">
                 </a>
             </div>
-
-            <div class="next-btn">
-                <a href="#service-bg">
-                    <div class="mouse2"></div>
-                    <div class="mouse"></div>
-                </a>
-            </div>
-
         </div>
-
+        <!-- 手機板 -->
 
 
 
@@ -511,8 +506,8 @@
                 </div>
             </div>
 
-            <div class="next-btn">
-                <a href="#sop-bg">
+            <div class="next-btn2">
+                <a href="#intro-area-bg">
                     <div class="mouse4"></div>
                     <div class="mouse3"></div>
                 </a>
