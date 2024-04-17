@@ -1885,6 +1885,7 @@ h2 {
     #service-bg {
         padding-top: 10vh;
         height: fit-content;
+        padding-bottom: 10vh;
     }
 
     .service-group {
@@ -1967,6 +1968,8 @@ h2 {
 
 @media only screen and (max-width: 1024px) {
 
+
+
     .service-group {
         max-width: 100vmin;
         height: fit-content;
@@ -2024,6 +2027,7 @@ h2 {
     .mail {
         text-align: center;
         height: 100px;
+        width: 95%;
     }
 
     #good-bg {
