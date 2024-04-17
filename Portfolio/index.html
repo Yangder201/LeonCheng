@@ -84,60 +84,28 @@
 
 
         //作品集區塊移入移出動態效果
-        document.addEventListener("DOMContentLoaded", function() {
-        const items = document.querySelectorAll(".case .item");
-        const item1 = document.querySelector(".item1");
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll(".case .item");
+            const item1 = document.querySelector(".item1");
 
-        function resetFlex() {
+            function resetFlex() {
+                items.forEach(item => {
+                    item.style.flex = "1 1";
+                });
+            }
+
             items.forEach(item => {
-                item.style.flex = "1 1";
-            });
-        }
-
-        items.forEach(item => {
-            item.addEventListener("mouseenter", function() {
-                resetFlex();
-                item1.style.flex = (item === item1) ? "4 1" : "1 1";
-                item.style.flex = "4 1";
+                item.addEventListener("mouseenter", function () {
+                    resetFlex();
+                    item1.style.flex = (item === item1) ? "4 1" : "1 1";
+                    item.style.flex = "4 1";
+                });
             });
         });
-    });
 
 
-        //當前按鈕 
-        // $(document).ready(function () {
-        //     $('ul li a').click(function () {
-        //         $('li a').removeClass("active");
-        //         $(this).addClass("active");
-        //     });
-        // });
 
-
-        //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
-        // window.addEventListener('scroll', function () {
-        //     var scrollPosition = window.scrollY;
-        //     var menuItems = document.querySelectorAll('#cssmenu ul li a');
-
-        //     menuItems.forEach(function (item) {
-        //         var sectionId = item.getAttribute('href').substring(1);
-        //         var section = document.getElementById(sectionId);
-        //         if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
-        //             removeFocusFromMenuItems(menuItems);
-        //             item.parentNode.classList.add('focus');
-        //         } else {
-        //             item.parentNode.classList.remove('focus');
-        //         }
-        //     });
-        // });
-
-        // function removeFocusFromMenuItems(menuItems) {
-        //     menuItems.forEach(function (item) {
-        //         item.parentNode.classList.remove('focus');
-        //     });
-        // }
-    </script>
-
-    <script type="text/javascript">
+        //主選單往下滾動變化
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 700) {
@@ -157,9 +125,33 @@
                 document.getElementById("header-fixed").style.boxShadow = '-16px 1px 0px -5px #dfdfdf96';
                 document.getElementById("logoimg").style.maxWidth = '150px';
                 document.getElementById("logo").style.marginTop = '0';
-                $('li a').removeClass("active");
+
 
             }
+        }
+
+
+        //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var menuItems = document.querySelectorAll('#cssmenu ul li a');
+
+            menuItems.forEach(function (item) {
+                var sectionId = item.getAttribute('href').substring(1);
+                var section = document.getElementById(sectionId);
+                if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+                    removeFocusFromMenuItems(menuItems);
+                    item.parentNode.classList.add('focus');
+                } else {
+                    item.parentNode.classList.remove('focus');
+                }
+            });
+        });
+
+        function removeFocusFromMenuItems(menuItems) {
+            menuItems.forEach(function (item) {
+                item.parentNode.classList.remove('focus');
+            });
         }
     </script>
 
@@ -200,23 +192,18 @@
                             <span class="menu-en">Process</span>
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="#good-bg">
-                             <span class="menu-cn">客戶好評</span>
-                             <span class="menu-en">Customer Feedback</span>
-                        </a>
-                    </li> -->
 
                     <li><a href="#intro-area-bg">
                             <span class="menu-cn">關於</span>
                             <span class="menu-en">About</span>
                         </a></li>
-                    <li><a href="#banner">
+                    
+                        <a href="#banner">
                             <span class="material-symbols-outlined">
                                 home_app_logo
                             </span>
                         </a>
-                    </li>
+                   
 
                 </ul>
             </div>
