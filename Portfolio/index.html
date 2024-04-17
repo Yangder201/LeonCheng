@@ -82,6 +82,28 @@
             });
         });
 
+
+        //作品集區塊移入移出動態效果
+        document.addEventListener("DOMContentLoaded", function() {
+        const items = document.querySelectorAll(".case .item");
+        const item1 = document.querySelector(".item1");
+
+        function resetFlex() {
+            items.forEach(item => {
+                item.style.flex = "1 1";
+            });
+        }
+
+        items.forEach(item => {
+            item.addEventListener("mouseenter", function() {
+                resetFlex();
+                item1.style.flex = (item === item1) ? "4 1" : "1 1";
+                item.style.flex = "4 1";
+            });
+        });
+    });
+
+
         //當前按鈕 
         // $(document).ready(function () {
         //     $('ul li a').click(function () {
@@ -122,7 +144,7 @@
                 document.getElementById("header-fixed").style.background = '#ffffff0f';
                 document.getElementById("header-fixed").style.marginTop = '1vh';
                 document.getElementById("header-fixed").style.height = '66px';
-                document.getElementById("header-fixed").style.boxShadow ='-16px 2px 0px -5px #dfdfdf96';
+                document.getElementById("header-fixed").style.boxShadow = '-16px 2px 0px -5px #dfdfdf96';
                 document.getElementById("logo").style.marginTop = '0';
                 document.getElementById("logoimg").style.maxWidth = '130px';
 
@@ -132,7 +154,7 @@
                 document.getElementById("header-fixed").style.background = '#ffffff0f';
                 document.getElementById("header-fixed").style.marginTop = '2vh';
                 document.getElementById("header-fixed").style.height = '70px';
-                document.getElementById("header-fixed").style.boxShadow ='-16px 1px 0px -5px #dfdfdf96';
+                document.getElementById("header-fixed").style.boxShadow = '-16px 1px 0px -5px #dfdfdf96';
                 document.getElementById("logoimg").style.maxWidth = '150px';
                 document.getElementById("logo").style.marginTop = '0';
                 $('li a').removeClass("active");
@@ -211,7 +233,6 @@
                     <li><a href="index.html#case-area">作品</a></li>
                     <li><a href="#service-bg">服務</a></li>
                     <li><a href="#sop-bg">流程</a></li>
-                    <!-- <li><a href="#good-bg">客戶好評</a></li> -->
                     <li><a href="#intro-area-bg">關於</a></li>
                 </ul>
             </div>
@@ -516,56 +537,6 @@
         </div>
     </div>
 
-
-    <!-- <div id="good-bg">
-        <h2 class="w">客戶好評
-            <div class="tit-en" style="color: rgb(231, 231, 231);">Customer Feedback</div>
-        </h2>
-
-        <div class="good-area">
-
-            <div class="good-box">
-                <div class="good-tit">新莊呂宅，呂小姐</div>
-                <svg class="icon">
-                    <use xlink:href="#stars-5-0-star">
-                </svg>
-                <div class="good-info">
-                    透過朋友介紹，鄭設計師是一個能夠提供很務實專業的建議的設計師。
-                    很細心的考量細節跟執行，包含到未來維護都替我注意了。
-                    <br>
-                    很周到的幫我考慮到我沒注意的部分，像是我原本希望採用某種作法，
-                    他會提醒這樣的設計，未來可能會出現漏水問題等，幫我避掉麻煩。
-                    <br>
-                    因為我在執行方面就是比較不懂，設計師不怕說實話，不怕溝通給建議讓人安心。<br>
-                    因此我推薦有誠信，值得信賴，認真專業負責的杰境室內設計。
-                </div>
-            </div>
-
-            <div class="good-box">
-                <div class="good-tit">新莊劉宅,劉先生</div>
-                <svg class="icon">
-                    <use xlink:href="#stars-5-0-star">
-                </svg>
-                <div class="good-info">
-                    阿杰讓人很放心!從一開始設計討論,到設計圖出來,最後的成果跟3D圖真的是差不多.<br>
-                    還會親自到場監工這點我覺得很好.過程溝通也不會找不到人,<br>
-                    到最後驗收的時候都親自處理,服務很好,很認真又負責任!<br>
-                    所以我願意推薦給大家,交給阿杰真的可以放心!
-                </div>
-            </div>
-
-
-        </div>
-        <div class="next">
-            <a href="#intro-area-bg">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z" />
-                </svg>
-            </a>
-        </div>
-    </div> -->
 
 
 
