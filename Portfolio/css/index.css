@@ -152,9 +152,10 @@ section {
 
 .next-btn {
     position: absolute;
+    height: 20px;
     top: 88vh;
     left: 48.5vw;
-    z-index: 999;
+    z-index: 55;
     color: #ffffff;
 }
 
@@ -170,89 +171,91 @@ section {
 
 
 .mouse {
-	width: 50px;
-	height: 50px;
-	border-radius: 60px;
-	position: relative;
-	&::before {
-		content: '';
-		width: 7px;
-		height: 7px;
-		position: absolute;
-		top: 0px;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: #f1f1f1;
-		border-radius: 50%;
-		opacity: 1;
-		animation: wheel 2s infinite;
-		-webkit-animation: wheel 2s infinite;
-	}
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel 2s infinite;
+        -webkit-animation: wheel 2s infinite;
+    }
 }
 
 @keyframes wheel {
-	to {
-		opacity: 0;
-		top: 30px;
-	}
+    to {
+        opacity: 0;
+        top: 30px;
+    }
 
 
 }
 
 @-webkit-keyframes wheel {
-	to {
-		opacity: 0;
-		top: 30px;
-	}
+    to {
+        opacity: 0;
+        top: 30px;
+    }
 }
 
 
 
 .mouse2 {
-	width: 50px;
-	height: 70px;
-	border-radius: 60px;
-	position: relative;
-	&::before {
-		content: '';
-		width: 3px;
-		height: 3px;
-		position: absolute;
-		top: 80px;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: #f1f1f1;
-		border-radius: 50%;
-		opacity: 0;
-		animation: wheel2 2s infinite;
+    width: 50px;
+    height: 70px;
+    border-radius: 60px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 3px;
+        height: 3px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        opacity: 0;
+        animation: wheel2 2s infinite;
         animation-delay: 1s;
         animation-duration: .5s;
-		-webkit-animation: wheel2 2s infinite;
-	}
+        -webkit-animation: wheel2 2s infinite;
+    }
 }
 
 
 @keyframes wheel2 {
-	0% {
-		opacity: 0;
+    0% {
+        opacity: 0;
         top: 50px;
         width: 5px;
         height: 5px;
-	}
+    }
 
-    50%{
+    50% {
         opacity: .8;
         top: 80px;
     }
 
-    75%{
+    75% {
         opacity: .6;
         top: 100px;
         width: 4px;
         height: 4px;
     }
 
-    100%{
+    100% {
         opacity: 0;
         top: 100px;
         width: 4px;
@@ -261,25 +264,25 @@ section {
 }
 
 @-webkit-keyframes wheel2 {
-	0% {
-		opacity: 0;
+    0% {
+        opacity: 0;
         top: 50px;
         width: 2px;
-	}
+    }
 
-    50%{
+    50% {
         opacity: 1;
         top: 80px;
         width: 3px;
     }
 
-    80%{
+    80% {
         opacity: 0;
         top: 100px;
         width: 5px;
     }
 
-    100%{
+    100% {
         opacity: 0;
         top: 100px;
         width: 8px;
@@ -291,89 +294,91 @@ section {
 
 
 .mouse3 {
-	width: 50px;
-	height: 50px;
-	border-radius: 60px;
-	position: relative;
-	&::before {
-		content: '';
-		width: 7px;
-		height: 7px;
-		position: absolute;
-		top: 0px;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: #3f3f3f;
-		border-radius: 50%;
-		opacity: 1;
-		animation: wheel3 2s infinite;
-		-webkit-animation: wheel3 2s infinite;
-	}
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #3f3f3f;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel3 2s infinite;
+        -webkit-animation: wheel3 2s infinite;
+    }
 }
 
 @keyframes wheel3 {
-	to {
-		opacity: 0;
-		top: 30px;
-	}
+    to {
+        opacity: 0;
+        top: 30px;
+    }
 
 
 }
 
 @-webkit-keyframes wheel3 {
-	to {
-		opacity: 0;
-		top: 30px;
-	}
+    to {
+        opacity: 0;
+        top: 30px;
+    }
 }
 
 
 
 .mouse4 {
-	width: 50px;
-	height: 70px;
-	border-radius: 60px;
-	position: relative;
-	&::before {
-		content: '';
-		width: 3px;
-		height: 3px;
-		position: absolute;
-		top: 80px;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: #444444;
-		border-radius: 50%;
-		opacity: 0;
-		animation: wheel4 2s infinite;
+    width: 50px;
+    height: 70px;
+    border-radius: 60px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 3px;
+        height: 3px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #444444;
+        border-radius: 50%;
+        opacity: 0;
+        animation: wheel4 2s infinite;
         animation-delay: 1s;
         animation-duration: .5s;
-		-webkit-animation: wheel2 2s infinite;
-	}
+        -webkit-animation: wheel2 2s infinite;
+    }
 }
 
 
 @keyframes wheel4 {
-	0% {
-		opacity: 0;
+    0% {
+        opacity: 0;
         top: 50px;
         width: 5px;
         height: 5px;
-	}
+    }
 
-    50%{
+    50% {
         opacity: .8;
         top: 80px;
     }
 
-    75%{
+    75% {
         opacity: .6;
         top: 100px;
         width: 4px;
         height: 4px;
     }
 
-    100%{
+    100% {
         opacity: 0;
         top: 100px;
         width: 4px;
@@ -382,25 +387,25 @@ section {
 }
 
 @-webkit-keyframes wheel4 {
-	0% {
-		opacity: 0;
+    0% {
+        opacity: 0;
         top: 50px;
         width: 2px;
-	}
+    }
 
-    50%{
+    50% {
         opacity: 1;
         top: 80px;
         width: 3px;
     }
 
-    80%{
+    80% {
         opacity: 0;
         top: 100px;
         width: 5px;
     }
 
-    100%{
+    100% {
         opacity: 0;
         top: 100px;
         width: 8px;
@@ -511,12 +516,20 @@ section {
     opacity: 1;
 }
 
+
+
 .menu-en {
     opacity: 0;
-    margin-left: -40%;
     font-weight: 200;
     font-size: 1rem;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
 
 #cssmenu ul li:hover a {
     transition: transform 0.3s ease, opacity .3s ease-out;
@@ -601,13 +614,13 @@ section {
 }
 
 
-#banner{
+#banner {
     background: linear-gradient(87deg, #2b2b2b, #1c1c1c);
     background-attachment: fixed;
     height: 100vh;
 }
 
-#banner-slider-demo-17{
+#banner-slider-demo-17 {
     background-attachment: fixed;
 }
 
@@ -686,7 +699,7 @@ section {
 }
 
 
-.case .item1{
+.case .item1 {
     flex: 4 1;
 }
 
@@ -885,7 +898,7 @@ h2 {
 
 }
 
-.light{
+.light {
     color: #333333;
 }
 
@@ -1300,11 +1313,17 @@ h2 {
 
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    padding-top: 20px;
+    color: #ffffff;
+    width: 50px;
+    float: right;
+    display: flex;
+    flex-wrap: nowrap;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24,
 }
 
 .back {
@@ -1466,7 +1485,7 @@ h2 {
     transition-duration: .2s;
 }
 
-.project-d{
+.project-d {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 300;
@@ -1821,10 +1840,10 @@ h2 {
 
 
 
-.focus{
-    border-bottom: 2px solid #fff;
+.focus {
+    /* border-bottom: 2px solid #ffffff; */
     transition: .7s;
-
+    background: #ffffff13;
 }
 
 
@@ -1926,7 +1945,7 @@ h2 {
 
     }
 
-    #project-main{
+    #project-main {
         margin-left: 20vw;
     }
 
@@ -2058,7 +2077,7 @@ h2 {
         height: fit-content;
     }
 
-    #project-main{
+    #project-main {
         margin-left: 20vw;
     }
 
@@ -2071,7 +2090,7 @@ h2 {
 
     }
 
-    
+
     #project-info-area {
         width: 20vw;
         position: fixed;
@@ -2105,7 +2124,7 @@ h2 {
         min-height: 80px;
         width: 100%;
         border-radius: 0;
-        margin-top: 0;
+        margin-top: 0 !important;
         margin-left: 0;
         background: #1f1f1fef !important;
 
@@ -2124,6 +2143,7 @@ h2 {
         margin-left: 2%;
         width: 40%;
         position: relative;
+        margin-top: 10px !important;
         float: left;
     }
 
@@ -2496,6 +2516,15 @@ h2 {
 
 @media only screen and (max-width: 426px) {
 
+    #header-fixed {
+        margin-top: 0 !important;
+
+    }
+
+    #logo {
+        margin-top: 10px !important;
+    }
+
     h2 {
         margin-bottom: 15px;
     }
@@ -2515,12 +2544,12 @@ h2 {
         margin: 15px;
     }
 
-    #project-main{
+    #project-main {
         margin-left: 2vw;
     }
 
 
-    .next-btn{
+    .next-btn {
         position: absolute;
         top: 75vh;
         left: 44vw;
@@ -2528,7 +2557,7 @@ h2 {
         color: #ffffff;
     }
 
-    .next-btn2{
+    .next-btn2 {
         display: none;
     }
 
@@ -2547,7 +2576,7 @@ h2 {
     }
 
 
-    
+
     .text li {
         list-style-type: square;
         margin-left: -10px;

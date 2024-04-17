@@ -33,6 +33,7 @@
 
 #cssmenu {
   float: right;
+  width: 40%;
   margin-right: 10vw;
   line-height: 1;
   /* padding-top:10px; */
@@ -54,7 +55,7 @@
 
 #cssmenu>ul>li {
   display: inline-block;
-  padding: 15px 10px 0 10px;
+  padding: 12px 10px 0 10px;
 }
 
 
@@ -117,9 +118,9 @@
   width: 100%;
 } 
 
- #cssmenu>ul>li>a:focus{
+ /* #cssmenu>ul>li>a:focus{
   border-bottom: #ffffff 5px solid;
-}
+} */
 
 #cssmenu>ul>li.has-sub>a {
   padding-right: 35px;
@@ -184,6 +185,15 @@
   background: #373737db;
   margin-left: -10px;
 
+}
+
+#cssmenu ul li{
+  width: 20%;
+
+}
+
+#cssmenu ul li a{
+  padding: 12px 0 0 0;
 }
 
 #cssmenu ul li:hover>ul>li {
