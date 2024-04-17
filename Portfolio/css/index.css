@@ -516,12 +516,16 @@ section {
     opacity: 1;
 }
 
-
+.menu-cn{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 3pt;
+}
 
 .menu-en {
     opacity: 0;
     font-weight: 200;
-    font-size: 1rem;
+    font-size: .8rem;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -902,7 +906,7 @@ h2 {
 }
 
 .tit-en {
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 2rem;
     font-weight: 200;
     letter-spacing: 1.5px;
