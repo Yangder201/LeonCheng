@@ -46,7 +46,7 @@ a:active {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(255 255 255 / 32%);
+    background-color: rgba(228, 228, 228, 0.719);
     border-radius: 999px;
     border: 5px solid transparent;
     background-clip: content-box;
@@ -54,7 +54,7 @@ a:active {
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: #636363;
+    background: #1f1f1f;
 }
 
 img {
