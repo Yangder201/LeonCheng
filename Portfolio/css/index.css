@@ -1068,7 +1068,6 @@ h2 {
 
 .sop-area {
     max-width: 100%;
-    margin: auto 30px 0 0;
     margin-bottom: 10px;
     min-height: 50px;
     color: #363636;
@@ -1142,7 +1141,6 @@ h2 {
 }
 
 .next-step {
-    width: 99%;
     text-align: center;
     padding: 8px;
     color: rgb(235, 235, 235);
@@ -1864,7 +1862,7 @@ h2 {
     }
 
     .intro-area {
-        width: 80vmax;
+        width: 100vmax;
         min-height: 40vh;
         margin: 3vh auto 0 auto;
         height: auto;
@@ -1874,10 +1872,6 @@ h2 {
         justify-content: space-evenly;
         flex-wrap: wrap;
         clear: both;
-        /* background: #ffffff77;
-    backdrop-filter: blur(5px);
-    border-radius: 10px; */
-
     }
 
 
@@ -1966,6 +1960,12 @@ h2 {
     }
 
 
+    .mail {
+        text-align: left;
+        height: 100px;
+    }
+
+
 
 }
 
@@ -2009,7 +2009,16 @@ h2 {
 
     .intro-area {
         width: 100vmax;
+        margin: 3vh auto 0 auto;
+        height: auto;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        clear: both;
     }
+
 
     .info {
         width: 50vmax;
@@ -2022,17 +2031,6 @@ h2 {
         margin: 10px;
     }
 
-
-    .contact {
-        margin: auto;
-
-    }
-
-    .mail {
-        text-align: center;
-        height: 100px;
-        width: 95%;
-    }
 
     #good-bg {
         width: 100%;
@@ -2367,6 +2365,21 @@ h2 {
         padding: 0;
     }
 
+
+
+    .contact {
+        margin: auto;
+
+    }
+
+    .mail {
+        text-align: center;
+        height: 100px;
+        width: 95%;
+    }
+
+
+
     /*內頁*/
 
     #inside-logo {
@@ -2518,6 +2531,13 @@ h2 {
 
     .slogan {
         text-align: center;
+    }
+
+    
+    #footer {
+        padding-top: 0;
+        text-align: center;
+        width: 90%;
     }
 
 }
