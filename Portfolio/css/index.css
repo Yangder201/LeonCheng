@@ -1123,11 +1123,12 @@ h2 {
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 30px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
-    color: #497a47;
+    color: #336430;
 
 }
 
