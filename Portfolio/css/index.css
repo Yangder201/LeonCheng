@@ -417,7 +417,11 @@ section {
 
 
 #header {
-    /* background: linear-gradient(90deg, #74ccff82, #c1ca4484); */
+    min-height: 12vh;
+    padding-top: 15px;
+    background: url(../img/banner-inside.jpg) repeat center;
+    background-attachment: fixed;
+    filter: brightness(0.6);
     width: 100%;
     z-index: 88;
     position: relative;
@@ -504,6 +508,21 @@ section {
 }
 
 
+
+#case-logo {
+    width: 20%;
+    padding-top: 15px;
+    position: relative;
+    z-index: 96;
+    float: left;
+    /* filter: drop-shadow(#333333d7 3px 5px 10px); */
+    animation-name: loading;
+    animation-duration: 0.5s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
 
 
 #cssmenu ul li:hover .menu-cn {
@@ -1200,6 +1219,17 @@ h2 {
     color: #afafaf;
     position: absolute;
     bottom: 2vh;
+}
+
+
+#case-footer {
+    width: 100%;
+    min-height: 20px;
+    text-align: center;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    color: #afafaf;
+    padding: 25px 0 50px 0;
 }
 
 
