@@ -55,11 +55,11 @@
 			});
 		});
 
-		//整頁鎖右鍵
-		document.addEventListener('contextmenu', function (event) {
-			event.preventDefault();
-		});
-
+		   //整頁鎖右鍵
+		   document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+		
 	</script>
 
 
@@ -185,9 +185,38 @@
 <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
 
+<script type="text/javascript">
+	$(document).ready(function () {
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		$('.fancybox').fancybox({
+			autoSize: true,
+			scrolling: 'auto',
+			fitToView: false,
+			width: 'auto',
+			maxWidth: '100%',
+		});
 
+		$('.fancybox-buttons').fancybox({
+			openEffect: 'none',
+			closeEffect: 'none',
+
+			prevEffect: 'none',
+			nextEffect: 'none',
+
+			closeBtn: false,
+
+			helpers: {
+				title: {
+					type: 'inside'
+				},
+				buttons: {}
+			},
+
+			afterLoad: function () {
+				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+			}
+		});
+	});
+</script>
 
 </html>
