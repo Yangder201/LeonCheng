@@ -26,17 +26,11 @@
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
-	<!--RWD MENU相關-->
-	<link href="css/styles.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-	<script src="js/menu.js" type="text/javascript"></script>
-	<!--/RWD MENU相關-->
+    <!--RWD MENU相關-->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-	<!--fancybox-->
-	<link rel="stylesheet" href="css/portfolio.css" type="text/css">
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
 
 	<!--go to top js-->
 	<script type="text/javascript">
@@ -56,9 +50,9 @@
 		});
 
 		   //整頁鎖右鍵
-		//    document.addEventListener('contextmenu', function(event) {
-        //     event.preventDefault();
-        // });
+		   document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
 		
 	</script>
 
@@ -184,39 +178,5 @@
 <script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
 <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
 
-
-<script type="text/javascript">
-	$(document).ready(function () {
-
-		$('.fancybox').fancybox({
-			autoSize: true,
-			scrolling: 'auto',
-			fitToView: false,
-			width: 'auto',
-			maxWidth: '100%',
-		});
-
-		$('.fancybox-buttons').fancybox({
-			openEffect: 'none',
-			closeEffect: 'none',
-
-			prevEffect: 'none',
-			nextEffect: 'none',
-
-			closeBtn: false,
-
-			helpers: {
-				title: {
-					type: 'inside'
-				},
-				buttons: {}
-			},
-
-			afterLoad: function () {
-				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-			}
-		});
-	});
-</script>
 
 </html>
