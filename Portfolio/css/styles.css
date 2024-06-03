@@ -266,15 +266,16 @@
 
 @media all and (max-width: 769px) {
   #cssmenu {
-    width: 50%;
-    margin-top: -55px;
+    width: 100%;
+    position: fixed;
+
   
   }
 
   #cssmenu ul {
     width: 100%;
     display: none;
-    background: #2c2c2cdb !important;
+    background: #2c2c2cf1 !important;
   }
 
   #cssmenu.align-center>ul,
