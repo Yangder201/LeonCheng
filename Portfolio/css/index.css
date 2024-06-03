@@ -522,9 +522,8 @@ section {
 
 
 #case-logo {
-    width: 50%;
+    width: 20%;
     padding-top: 15px;
-    padding-left: 5vw;
     position: relative;
     z-index: 96;
     float: left;
@@ -1898,6 +1897,12 @@ h2 {
 @media only screen and (max-width: 1440px) {
 
 
+
+    #case-logo{
+        width: 30%;
+        padding-left: 5vw;
+    }
+    
     .side img {
         max-width: 300px;
     }
@@ -2013,6 +2018,14 @@ h2 {
 
 @media only screen and (max-width: 1024px) {
 
+
+
+    
+
+    #case-logo{
+        width: 30%;
+        padding-left: 5vw;
+    }
 
 
     .service-group {
@@ -2592,6 +2605,13 @@ h2 {
     #header-fixed {
         margin-top: 0 !important;
 
+    }
+
+    
+
+    #case-logo{
+        width: 50%;
+        padding-left: 5vw;
     }
 
     #logo {
