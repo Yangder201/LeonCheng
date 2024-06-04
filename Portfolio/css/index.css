@@ -1335,9 +1335,10 @@ h2 {
 
 
 .content a:hover::before {
+    opacity: 1;
     background: linear-gradient(90deg, rgba(29, 39, 30, 0.856) 0%, rgba(255, 255, 255, 0) 30%);
     background: -moz-linear-gradient(90deg, rgba(29, 39, 30, 0.856) 0%, rgba(255, 255, 255, 0) 30%);
-    background: -webkit-linear-gradient(90deg, rgb(39, 88, 60) 0%, rgba(255, 255, 255, 0) 35%);
+    background: -webkit-linear-gradient(90deg, rgba(23, 29, 26, 0.904) 0%, rgba(255, 255, 255, 0) 30%);
 }
 
 .content a {
