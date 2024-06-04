@@ -155,10 +155,28 @@
             });
         }
 
-           //整頁鎖右鍵
-           document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
+
+
+        //滑鼠移入作品時，移除預設 active，並維持展開
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const contents = document.querySelectorAll('.content');
+
+        //     contents.forEach(content => {
+        //         content.addEventListener('mouseenter', () => {
+        //             contents.forEach(c => c.classList.remove('active')); // 移除所有區塊的 active 類
+        //             content.classList.add('active'); // 為當前區塊添加 active 類
+        //         });
+        //     });
+        // });
+
+        //整頁鎖右鍵
+        // document.addEventListener('contextmenu', function (event) {
+        //     event.preventDefault();
+        // });
+
+
+
+
     </script>
 
 
@@ -265,45 +283,108 @@
 
 
 
+
+
+
     <div id="case-area">
         <h2 class="light">作品
             <div class="tit-en">Work</div>
         </h2>
 
         <div class="case">
-            <div class="item item1">
-                <a href="project001.html">
-                    <div class="case-tit">汐止王邸</div>
-                    <div class="case-info">38 坪</div>
-                </a>
-            </div>
-            <div class="item item2">
-                <a href="project003.html">
-                    <div class="case-tit">新莊劉宅</div>
-                    <div class="case-info">29 坪</div>
+
+            <div class="category_container">
+
+                <div class="content">
+                    <a href="project001.html">
+                        <img src="img/project001.jpg" class="professio_image" alt="Profession" />
+                        <img src="img/case001.png" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>汐止王邸</span>
+                            <p>38 坪</p>
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2020 年完⼯｜和康雲集
+                                </p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="content">
+                    <a href="project003.html">
+                        <img src="img/project003.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case003.png" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>新莊劉宅</span>
+                            <p>29 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2021 年完⼯｜冠德泰極</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="content">
+                    <a href="project003.html">
+                        <img src="img/project004.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case004.png" class="profile_image" alt="Profile" />
+
+                        <div class="profile_detail">
+                            <span>新莊呂宅</span>
+                            <p>27 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2022 年完⼯｜冠德泰極</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="content">
+                    <a href="project002.html">
+                        <img src="img/project002.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case002.png" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>新莊唐宅</span>
+                            <p>24 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2019 年完⼯｜吉泰美</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="content">
+                    <a href="project005.html">
+                        <img src="img/project005.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case005.png" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>泰山林宅</span>
+                            <p>15 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2022 年完⼯｜鴻承知青</p>
+                            </div>
+                        </div>
+                </div>
                 </a>
             </div>
 
-            <div class="item item3">
-                <a href="project004.html">
-                    <div class="case-tit">新莊呂宅</div>
-                    <div class="case-info">27 坪</div>
-                </a>
-               
-            </div>
-            <div class="item item4">
-                <a href="project002.html">
-                    <div class="case-tit">新莊唐宅</div>
-                    <div class="case-info">24 坪</div>
-                </a>
-            </div>
-
-            <div class="item item4">
-                <a href="project005.html">
-                    <div class="case-tit">泰山林宅</div>
-                    <div class="case-info">15 坪</div>
-                </a>
-            </div>
 
             <div class="next-btn">
                 <a href="#service-bg">
@@ -341,6 +422,7 @@
                     <img src="img/case004.png">
                 </a>
             </div>
+            
         </div>
         <!-- 手機板 -->
 
