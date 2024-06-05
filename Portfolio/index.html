@@ -84,26 +84,6 @@
         });
 
 
-        //作品集區塊移入移出動態效果
-        document.addEventListener("DOMContentLoaded", function () {
-            const items = document.querySelectorAll(".case .item");
-            const item1 = document.querySelector(".item1");
-
-            function resetFlex() {
-                items.forEach(item => {
-                    item.style.flex = "1 1";
-                });
-            }
-
-            items.forEach(item => {
-                item.addEventListener("mouseenter", function () {
-                    resetFlex();
-                    item1.style.flex = (item === item1) ? "4 1" : "1 1";
-                    item.style.flex = "4 1";
-                });
-            });
-        });
-
 
 
         //主選單往下滾動變化
@@ -156,26 +136,10 @@
         }
 
 
-
-        //滑鼠移入作品時，移除預設 active，並維持展開
-        // document.addEventListener('DOMContentLoaded', () => {
-        //     const contents = document.querySelectorAll('.content');
-
-        //     contents.forEach(content => {
-        //         content.addEventListener('mouseenter', () => {
-        //             contents.forEach(c => c.classList.remove('active')); // 移除所有區塊的 active 類
-        //             content.classList.add('active'); // 為當前區塊添加 active 類
-        //         });
-        //     });
-        // });
-
         //整頁鎖右鍵
         // document.addEventListener('contextmenu', function (event) {
         //     event.preventDefault();
         // });
-
-
-
 
     </script>
 
@@ -292,7 +256,6 @@
         </h2>
 
         <div class="case">
-
             <div class="category_container">
 
                 <div class="content">
@@ -395,37 +358,45 @@
 
         </div>
 
-        <!-- 手機板 -->
-        <div id="case">
-            <div class="case-box" data-aos="fade-up"><a href="project002.html">
-                    <div class="case-tit">新莊唐宅</div>
-                    <div class="case-info">2019</div>
-                    <img src="img/case002.jpg">
-                </a>
-            </div>
-            <div class="case-box" data-aos="fade-up"><a href="project001.html">
-                    <div class="case-tit">汐止王邸</div>
-                    <div class="case-info">2020</div>
-                    <img src="img/case001.jpg">
-                </a>
-            </div>
+      <!-- 手機板 -->
+			<div id="case">
 
-            <div class="case-box" data-aos="fade-up"><a href="project003.html">
-                    <div class="case-tit">新莊劉宅</div>
-                    <div class="case-info">2021</div>
-                    <img src="img/case003.jpg">
-                </a>
-            </div>
-            <div class="case-box" data-aos="fade-up"><a href="project004.html">
-                    <div class="case-tit">新莊呂宅</div>
-                    <div class="case-info">2022</div>
-                    <img src="img/case004.jpg">
-                </a>
-            </div>
-            
-        </div>
-        <!-- 手機板 -->
+				<div class="case-box" data-aos="fade-up"><a href="project001.html">
+						<div class="case-tit">汐止王邸</div>
+						<div class="case-info">38 坪</div>
+						<img src="img/project001.jpg">
+					</a>
+				</div>
+				<div class="case-box" data-aos="fade-up"><a href="project002.html">
+						<div class="case-tit">新莊唐宅</div>
+						<div class="case-info">29 坪</div>
+						<img src="img/project002.jpg">
+					</a>
+				</div>
 
+
+				<div class="case-box" data-aos="fade-up"><a href="project003.html">
+						<div class="case-tit">新莊劉宅</div>
+						<div class="case-info">27 坪</div>
+						<img src="img/project003.jpg">
+					</a>
+				</div>
+				<div class="case-box" data-aos="fade-up"><a href="project004.html">
+						<div class="case-tit">新莊呂宅</div>
+						<div class="case-info">24 坪</div>
+						<img src="img/project004.jpg">
+					</a>
+				</div>
+
+				<div class="case-box" data-aos="fade-up"><a href="project004.html">
+						<div class="case-tit">泰山林宅</div>
+						<div class="case-info">15 坪</div>
+						<img src="img/project005.jpg">
+					</a>
+				</div>
+
+			</div>
+			<!-- 手機板 -->
 
 
 
@@ -697,31 +668,6 @@
         }
     </script>
 
-
-    <!--星星評論svg-->
-    <svg id="stars" style="display: none;" version="1.1">
-        <symbol id="stars-full-star" viewBox="0 0 102 18">
-            <path
-                d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
-        </symbol>
-
-        <symbol id="stars-half-star" viewBox="0 0 102 18">
-            <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792" fill="#e9ba26" />
-        </symbol>
-
-        <symbol id="stars-all-star" viewBox="0 0 102 18">
-            <use xlink:href="#stars-full-star" />
-            <use xlink:href="#stars-full-star" transform="translate(21)" />
-            <use xlink:href="#stars-full-star" transform="translate(42)" />
-            <use xlink:href="#stars-full-star" transform="translate(63)" />
-            <use xlink:href="#stars-full-star" transform="translate(84)" />
-        </symbol>
-
-        <symbol id="stars-5-0-star" viewBox="0 0 102 18">
-            <use xlink:href="#stars-all-star" fill="#e9ba26" />
-        </symbol>
-
-    </svg>
 
 
     <script>
