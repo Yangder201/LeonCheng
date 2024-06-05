@@ -703,7 +703,8 @@ section {
     height: 65vh;
     display: flex;
     gap: 7px;
-    margin: auto;
+    margin: 7vh auto 2vh auto;
+
 }
 
 
@@ -948,7 +949,6 @@ section {
 
 
 h2 {
-    padding-bottom: 8vh;
     font-size: 1.8rem !important;
     font-weight: 400 !important;
     text-align: center;
@@ -2509,6 +2509,13 @@ h2 {
     }
 
 
+    #service-tit-bg {
+        width: 250px;
+        margin: auto;
+        background: linear-gradient(91deg, #262626, #212121);
+        z-index: 33;
+        position: relative;
+    }
 
     #intro-area-bg {
         width: 100%;
@@ -2899,7 +2906,14 @@ h2 {
         display: none;
     }
 
-
+    #service-tit-bg {
+        width: 250px;
+        margin: auto;
+        background: linear-gradient(91deg, #282828, #202020);
+        z-index: 33;
+        position: relative;
+    }
+    
 
     .service {
         width: 35vmin;
