@@ -464,13 +464,12 @@ section {
 #header-fixed {
     width: 80vw;
     border: 2px solid #ffffff24;
-    margin-top: 3vh;
     margin-left: 8vw;
+    margin-top: 5vh;
+    height: 75px;
     padding: 0 2vw;
     border-radius: 50px;
-    /* box-shadow: -15px 0 0 -3px #dfdfdf96; */
     z-index: 99;
-    height: 70px;
     position: fixed;
     transition: 0.3s;
     background: #ffffff17;
@@ -967,7 +966,7 @@ h2 {
 }
 
 .tit-en {
-    font-size: .9rem;
+    font-size: .7rem;
     line-height: 2rem;
     font-weight: 200;
     letter-spacing: 1.5px;
