@@ -698,7 +698,7 @@ section {
 }
 
 .case {
-    width: 90vw;
+    width: 96vw;
     height: 65vh;
     display: flex;
     gap: 7px;
@@ -1308,23 +1308,20 @@ h2 {
 
 .content {
     --active: 0;
-
     cursor: pointer;
     overflow: clip;
-
     position: relative;
     z-index: 10;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 1.5rem;
+    gap: 1px;
     padding: 2.5rem;
-    border: 2px solid #ffffffad;
+    /* border: 2px solid #ffffffad; */
     width: calc((100% / 5) - var(--gap));
     height: 100%;
-
-    border-radius: 2rem;
+    border-radius: 15px;
     transition: width 0.5s ease-in-out;
 
    
@@ -1333,7 +1330,7 @@ h2 {
 .content:hover {
     --active: 1;
     width: calc(100% - var(--gap));
-    border: 0;
+    border: 2px solid #ffffff;
    
 }
 
@@ -1347,7 +1344,7 @@ h2 {
     width: 100%;
     height: 100%;
 
-    opacity: .5;
+    opacity: .4;
     background: linear-gradient(90deg, rgb(12, 14, 13) 0%, rgba(5, 5, 5, 0.575) 100%);
     background: -moz-linear-gradient(90deg, rgb(12, 14, 13) 0%, rgba(5, 5, 5, 0.575) 100%);
     background: -webkit-linear-gradient(90deg, rgb(12, 14, 13) 0%, rgba(5, 5, 5, 0.575) 100%);
