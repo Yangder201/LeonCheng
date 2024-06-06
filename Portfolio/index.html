@@ -91,7 +91,7 @@
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 700) {
                 document.getElementById("header-fixed").style.background = '#dbdbdb33';
-                document.getElementById("header-fixed").style.marginTop = '1vh';
+                document.getElementById("header-fixed").style.marginTop = '2vh';
                 document.getElementById("header-fixed").style.height = '66px';
                 document.getElementById("header-fixed").style.boxShadow = '';
                 document.getElementById("logo").style.marginTop = '0';
@@ -101,8 +101,8 @@
 
             else {
                 document.getElementById("header-fixed").style.background = '#ffffff17';
-                document.getElementById("header-fixed").style.marginTop = '2vh';
-                document.getElementById("header-fixed").style.height = '70px';
+                document.getElementById("header-fixed").style.marginTop = '5vh';
+                document.getElementById("header-fixed").style.height = '75px';
                 document.getElementById("header-fixed").style.boxShadow = '';
                 document.getElementById("logoimg").style.maxWidth = '150px';
                 document.getElementById("logo").style.marginTop = '0';
@@ -135,11 +135,12 @@
             });
         }
 
+     
 
         //整頁鎖右鍵
-        // document.addEventListener('contextmenu', function (event) {
-        //     event.preventDefault();
-        // });
+        document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        });
 
     </script>
 
@@ -191,12 +192,11 @@
                             home_app_logo
                         </span>
                     </a>
-
-
                 </ul>
             </div>
         </div>
     </div>
+
 
     <div id="header-m">
         <div class="header-container">
@@ -258,7 +258,7 @@
         <div class="case">
             <div class="category_container">
 
-                <div class="content">
+                <div class="content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
                     <a href="project001.html">
                         <img src="img/project001.jpg" class="professio_image" alt="Profession" />
                         <img src="img/case001.jpg" class="profile_image" alt="Profile" />
@@ -279,7 +279,7 @@
 
 
 
-                <div class="content">
+                <div class="content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
                     <a href="project003.html">
                         <img src="img/project003.jpg" class="profession_image" alt="Profession" />
                         <img src="img/case003.jpg" class="profile_image" alt="Profile" />
@@ -296,7 +296,7 @@
                 </div>
 
 
-                <div class="content">
+                <div class="content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
                     <a href="project004.html">
                         <img src="img/project004.jpg" class="profession_image" alt="Profession" />
                         <img src="img/case004.jpg" class="profile_image" alt="Profile" />
@@ -314,7 +314,7 @@
                 </div>
 
 
-                <div class="content">
+                <div class="content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
                     <a href="project002.html">
                         <img src="img/project002.jpg" class="profession_image" alt="Profession" />
                         <img src="img/case002.jpg" class="profile_image" alt="Profile" />
@@ -331,7 +331,7 @@
                 </div>
 
 
-                <div class="content">
+                <div class="content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
                     <a href="project005.html">
                         <img src="img/project005.jpg" class="profession_image" alt="Profession" />
                         <img src="img/case005.jpg" class="profile_image" alt="Profile" />
@@ -358,45 +358,45 @@
 
         </div>
 
-      <!-- 手機板 -->
-			<div id="case">
+        <!-- 手機板 -->
+        <div id="case">
 
-				<div class="case-box" data-aos="fade-up"><a href="project001.html">
-						<div class="case-tit">汐止王邸</div>
-						<div class="case-info">38 坪</div>
-						<img src="img/project001.jpg">
-					</a>
-				</div>
-				<div class="case-box" data-aos="fade-up"><a href="project002.html">
-						<div class="case-tit">新莊唐宅</div>
-						<div class="case-info">29 坪</div>
-						<img src="img/project002.jpg">
-					</a>
-				</div>
+            <div class="case-box" data-aos="fade-up"><a href="project001.html">
+                    <div class="case-tit">汐止王邸</div>
+                    <div class="case-info">38 坪</div>
+                    <img src="img/project001.jpg">
+                </a>
+            </div>
+            <div class="case-box" data-aos="fade-up"><a href="project002.html">
+                    <div class="case-tit">新莊唐宅</div>
+                    <div class="case-info">29 坪</div>
+                    <img src="img/project002.jpg">
+                </a>
+            </div>
 
 
-				<div class="case-box" data-aos="fade-up"><a href="project003.html">
-						<div class="case-tit">新莊劉宅</div>
-						<div class="case-info">27 坪</div>
-						<img src="img/project003.jpg">
-					</a>
-				</div>
-				<div class="case-box" data-aos="fade-up"><a href="project004.html">
-						<div class="case-tit">新莊呂宅</div>
-						<div class="case-info">24 坪</div>
-						<img src="img/project004.jpg">
-					</a>
-				</div>
+            <div class="case-box" data-aos="fade-up"><a href="project003.html">
+                    <div class="case-tit">新莊劉宅</div>
+                    <div class="case-info">27 坪</div>
+                    <img src="img/project003.jpg">
+                </a>
+            </div>
+            <div class="case-box" data-aos="fade-up"><a href="project004.html">
+                    <div class="case-tit">新莊呂宅</div>
+                    <div class="case-info">24 坪</div>
+                    <img src="img/project004.jpg">
+                </a>
+            </div>
 
-				<div class="case-box" data-aos="fade-up"><a href="project004.html">
-						<div class="case-tit">泰山林宅</div>
-						<div class="case-info">15 坪</div>
-						<img src="img/project005.jpg">
-					</a>
-				</div>
+            <div class="case-box" data-aos="fade-up"><a href="project004.html">
+                    <div class="case-tit">泰山林宅</div>
+                    <div class="case-info">15 坪</div>
+                    <img src="img/project005.jpg">
+                </a>
+            </div>
 
-			</div>
-			<!-- 手機板 -->
+        </div>
+        <!-- 手機板 -->
 
 
 
