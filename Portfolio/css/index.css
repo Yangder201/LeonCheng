@@ -847,24 +847,25 @@ section {
 
 
 
-#intro-area-bg {
+#intro_area_bg {
     width: 100%;
     height: fit-content;
     min-height: 85vh;
     padding-top: 15vh;
-    background-image: url(../img/about-img.jpg);
+    /* background-image: url(../img/about-img.jpg); */
     background-color: #2a2a2a;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.intro-area {
-    width: 65VW;
-    margin: 0 auto 0 auto;
+.intro_area {
+    width: 70vw;
+    margin: auto;
     height: auto;
-    display: flex;
-    /* clear: both; */
     color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
 }
 
 .photo {
@@ -1275,14 +1276,11 @@ h2 {
 }
 
 .container {
-
-
     position: relative;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 2rem 5rem;
 
     width: 100%;
@@ -1292,21 +1290,20 @@ h2 {
 
 .category_container {
     --gap: 0.5rem;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: calc(var(--gap) * 2);
-
-    width: 100%;
+    gap: calc(var(--gap) * 3);
+    margin: auto;
+    width: 60%;
     height: 100%;
 }
 
 
 
 
-.content {
+.work_content {
     --active: 0;
     cursor: pointer;
     overflow: clip;
@@ -1327,15 +1324,15 @@ h2 {
    
 }
 
-.content:hover {
+.work_content:hover {
     --active: 1;
-    width: calc(100% - var(--gap));
+    width: calc( 100% - var(--gap));
     border: 2px solid #ffffff;
-   
+    transition: width 0.5s ease-in-out;
 }
 
 
-.content a::before {
+.work_content a::before {
     content: "";
     position: absolute;
     z-index: -10;
@@ -1351,7 +1348,7 @@ h2 {
 
 }
 
-.content a:hover::before {
+.work_content a:hover::before {
     content: "";
     position: absolute;
     z-index: -10;
@@ -1366,12 +1363,12 @@ h2 {
     background: -webkit-linear-gradient(90deg, rgba(8, 8, 8, 0.904) 0%, rgba(255, 255, 255, 0) 30%);
 }
 
-.content a {
+.work_content a {
     display: block;
     z-index: 8;
 }
 
-.content img {
+.work_content img {
     position: absolute;
     z-index: -20;
     top: 0;
@@ -1384,11 +1381,24 @@ h2 {
     object-position: center;
 }
 
-.content .profile_image {
+.work_content .profile_image {
     opacity: calc(1 - var(--active));
 
     transition: opacity 0.3s ease-in-out;
 }
+
+
+.work_content:hover .wrapper {
+    grid-template-rows: 1fr;
+}
+
+
+.work_content:hover .profile_quote {
+    transform: none;
+    opacity: 1;
+}
+
+
 
 .profile_detail {
     display: flex;
@@ -1448,18 +1458,168 @@ h2 {
 }
 
 
-.content:hover .wrapper {
-    grid-template-rows: 1fr;
+
+
+
+
+
+
+
+
+
+:root {
+	--x: 0;
+	--y: 0;
 }
 
 
-.content:hover .profile_quote {
-    transform: none;
-    opacity: 1;
+#about {
+	width: 1000px;
+	aspect-ratio: 2 / 1.1;
+	max-height: calc(100svh - 2rem);
+	position: relative;
+	overflow: hidden;
+	max-width: calc(100% - 2rem);
+    margin: 10vh auto 3vh auto;
+    padding-right: 15vw;
+}
+
+@media(orientation: portrait) {
+	#about {
+		min-height: 330px;
+	}
 }
 
 
 
+.assets > img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	translate: -50% 0;
+	height: 100%;
+	width: 1280px;
+	object-fit: cover;
+	object-position: center 43%;
+	user-select: none;
+	pointer-events: none;
+}
+
+.assets > img:first-of-type {
+	filter: saturate(1.5) brightness(0.9);
+	object-position: calc(-50% + (var(--x) * 30px)) calc(43% + (var(--y) * -20px));
+}
+
+.assets > img:last-of-type {
+	object-position: calc(-50% + (var(--x) * 40px)) calc(43% + (var(--y) * -40px));
+}
+
+.assets h3 {
+	position: absolute;
+	left: 40%;
+	top: 6%;
+	margin: 0;
+	font-size: 11rem;
+    opacity: .9;
+    letter-spacing: 1rem;
+    font-weight: bold;
+	translate: -50% 0;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', sans-serif;
+	color: white;
+	translate: calc(-30% + (var(--x) * -30px)) calc(var(--y) * -20px);
+}
+
+.content {
+	min-height: 32%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	display: grid;
+	gap: 0.2rem;
+	place-items: center;
+	align-content: center;
+	padding-bottom: 0.5rem;
+	z-index: 2;
+}
+
+
+.content p {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1rem;
+    line-height: 1.6rem;
+	position: relative;
+}
+
+.content p:first-of-type::after {
+	content: '';
+	position: absolute;
+	bottom: calc(100% + 1rem);
+	left: 50%;
+	width: 6ch;
+	background: white;
+	height: 1px;
+	translate: -50% 0;
+}
+
+.content p:last-of-type {
+	opacity: 0.8;
+}
+
+/* Blurring */
+.blur {
+	--layers: 5;
+	position: absolute;
+	inset: 0;
+}
+
+.blur .layer {
+	--blur: calc(
+		sin(((var(--layers) - var(--index)) / var(--layers)) * 45deg) * 30
+	);
+	--stop: calc(
+		sin(((var(--index)) / var(--layers)) * 45deg) * 35
+	);
+	position: absolute;
+	inset: 0;
+	background: hsl(0 0% 60% / 0.05);
+	backdrop-filter: blur(calc(var(--blur) * 1px));
+	mask: radial-gradient(
+		140% 130% at 45% 90%,
+		#fff 15%,
+		#0000 calc((15 + var(--stop)) * 1%)
+	);
+}
+
+.assets {
+	position: absolute;
+	inset: 0;
+	border-radius: 4em;
+	overflow: hidden;
+}
+
+.bear-link {
+	color: canvasText;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	width: 48px;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	opacity: 0.8;
+}
+
+:where(.x-link, .bear-link):is(:hover, :focus-visible) {
+	opacity: 1;
+}
+.bear-link svg {
+	width: 75%;
+}
 
 
 
@@ -2080,13 +2240,24 @@ h2 {
     display: none;
 }
 
+
+
 .contact {
-    max-width: 170px;
+    width: 170px;
+    padding: 5vh 3vw;
+    margin: auto;
+    line-height: 2rem;
+    margin-top: 5vh;
+    height: fit-content;
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+
 }
 
-.contact img {
-    max-width: 80%;
-
+.line img{
+    max-width: 170px;
+ 
 }
 
 .mail a {
@@ -2117,6 +2288,7 @@ h2 {
 
 
 
+
 @media only screen and (max-width: 1440px) {
 
 
@@ -2130,7 +2302,7 @@ h2 {
         max-width: 300px;
     }
 
-    .intro-area {
+    .intro_area {
         width: 100vmax;
         min-height: 40vh;
         margin: 3vh auto 0 auto;
@@ -2302,7 +2474,7 @@ h2 {
         font-size: 1.8rem;
     }
 
-    .intro-area {
+    .intro_area {
         width: 100vmax;
         margin: 3vh auto 0 auto;
         height: auto;
@@ -2534,7 +2706,7 @@ h2 {
     }
 
 
-    .intro-area {
+    .intro_area {
         width: 100vmin;
         height: fit-content;
         margin: 0 auto;
