@@ -1,0 +1,272 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--手機RWD宣告-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!--/手機RWD宣告-->
+    <link rel="icon" href="img/title-icon.ico" type="image/x-icon" />
+    <title>杰境室內設計作品</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+
+
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--home icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <!--RWD MENU相關-->
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/menu.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+    <!-- fancybox CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+
+
+    <!--go to top js-->
+    <script type="text/javascript">
+        $(function () {
+            $("#gotop").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 500);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+        //整頁鎖右鍵
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+    <div id="gotop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+    </div>
+
+    <div id="header">
+        <div id="header-container-inside">
+            <div id="logo">
+                <a href="index.html"><img src="img/sj-logo.png"></a>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="index.html#service-bg">
+                            <span class="menu-cn">服務</span>
+                            <span class="menu-en">Services</span>
+                        </a>
+                    </li>
+                    <li><a href="index.html#sop-bg">
+                            <span class="menu-cn">流程</span>
+                            <span class="menu-en">Process</span>
+                        </a>
+                    </li>
+
+
+                    <li><a href="index.html#intro-area-bg">
+                            <span class="menu-cn">關於</span>
+                            <span class="menu-en">About</span>
+                        </a></li>
+                    <a href="index.html#banner">
+                        <span class="material-symbols-outlined">
+                            home_app_logo
+                        </span>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="inside-main">
+        <div class="project-area">
+            <div id="project-info-area">
+                <div class="project-title">泰山林宅</div>
+                <div class="project-info">
+                    <ul>
+
+                        <li>性質 ｜ 住宅</li>
+                        <li>坪數 ｜ 3X 坪</li>
+                        <li>位置 ｜ 京澄泰然</li>
+                        <li>完⼯ ｜ 2024 年</li>
+                    </ul>
+                    <div class="back">
+                        <a href="case.html">更多作品</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project-main">
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/001.jpg" data-caption=""
+                        href="img/project/006/001.jpg">
+                        <img src="img/project/006/001.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/002.jpg" data-caption=""
+                        href="img/project/006/002.jpg">
+                        <img src="img/project/006/002.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/003.jpg" data-caption=""
+                        href="img/project/006/003.jpg">
+                        <img src="img/project/006/003.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/004.jpg" data-caption=""
+                        href="img/project/006/004.jpg">
+                        <img src="img/project/006/004.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/005.jpg" data-caption=""
+                        href="img/project/006/005.jpg">
+                        <img src="img/project/006/005.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/006.jpg" data-caption=""
+                        href="img/project/006/006.jpg">
+                        <img src="img/project/006/006.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/007.jpg" data-caption=""
+                        href="img/project/006/007.jpg">
+                        <img src="img/project/006/007.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/008.jpg" data-caption=""
+                        href="img/project/006/008.jpg">
+                        <img src="img/project/006/008.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/009.jpg" data-caption=""
+                        href="img/project/006/009.jpg">
+                        <img src="img/project/006/009.jpg" />
+                    </a>
+                </div>
+
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/010.jpg" data-caption=""
+                        href="img/project/006/010.jpg">
+                        <img src="img/project/006/010.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/011.jpg" data-caption=""
+                        href="img/project/006/011.jpg">
+                        <img src="img/project/006/011.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/012.jpg" data-caption=""
+                        href="img/project/006/012.jpg">
+                        <img src="img/project/006/012.jpg" />
+                    </a>
+                </div>
+
+                <div class="project-img">
+                    <a data-fancybox="gallery" data-src="img/project/006/013.jpg" data-caption=""
+                        href="img/project/006/013.jpg">
+                        <img src="img/project/006/013.jpg" />
+                    </a>
+                </div>
+                <div class="back-m">
+                    <a href="case.html">更多作品</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+<script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        compact: false
+    });    
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.fancybox').fancybox({
+            autoSize: true,
+            scrolling: 'auto',
+            fitToView: false,
+            width: 'auto',
+            maxWidth: '100%',
+        });
+
+        $('.fancybox-buttons').fancybox({
+            openEffect: 'none',
+            closeEffect: 'none',
+
+            prevEffect: 'none',
+            nextEffect: 'none',
+
+            closeBtn: false,
+
+            helpers: {
+                title: {
+                    type: 'inside'
+                },
+                buttons: {}
+            },
+
+            afterLoad: function () {
+                this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+            }
+        });
+    });
+</script>
+
+</html>

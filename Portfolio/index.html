@@ -94,6 +94,7 @@
                 document.getElementById("header-fixed").style.marginTop = '2vh';
                 document.getElementById("header-fixed").style.height = '66px';
                 document.getElementById("header-fixed").style.boxShadow = '';
+                document.getElementById("header-fixed").style.border = '2px solid #ffffff59';
                 document.getElementById("logo").style.marginTop = '0';
                 document.getElementById("logoimg").style.maxWidth = '130px';
 
@@ -104,6 +105,7 @@
                 document.getElementById("header-fixed").style.marginTop = '5vh';
                 document.getElementById("header-fixed").style.height = '75px';
                 document.getElementById("header-fixed").style.boxShadow = '';
+                document.getElementById("header-fixed").style.border = '';
                 document.getElementById("logoimg").style.maxWidth = '150px';
                 document.getElementById("logo").style.marginTop = '0';
 
@@ -135,12 +137,38 @@
             });
         }
 
-     
+
+        //作品區 移入移出
+        document.addEventListener("DOMContentLoaded", function () {
+            const items = document.querySelectorAll(".work_content");
+
+            items.forEach(item => {
+                item.addEventListener("mouseenter", function () {
+                    items.forEach(otherItem => {
+                        otherItem.classList.remove('work_focus'); //非選擇作品移除 class
+                        otherItem.classList.add('dimmed'); // 非選擇作品加上變暗 class
+                        otherItem.style.width = '8%'; //縮小非選擇的作品寬度
+                        otherItem.querySelector('.profile_image').style.opacity = 1; // 恢復原縮圖
+                    });
+
+                    item.classList.add('work_focus'); //當前選擇作品加上 class 效果
+                    item.classList.remove('dimmed'); // 當前選擇作品移除變暗 class
+                    item.querySelector('.profile_image').style.opacity = 0; // 出現完整作品圖
+                });
+                item.addEventListener("mouseleave", function () {
+                    items.forEach(otherItem => {
+                        otherItem.classList.remove('dimmed'); // 恢復所有作品的背景顏色
+                    });
+                });
+            });
+        });
+
+
 
         //整頁鎖右鍵
-        document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-        });
+        // document.addEventListener('contextmenu', function (event) {
+        // event.preventDefault();
+        // });
 
     </script>
 
@@ -216,17 +244,22 @@
 
     <div id="banner">
         <div id="banner-slider-demo-17" class="owl-carousel owl-theme">
-            <div class="item slide block-call-to-action" style="background-image: url('img/banner01.jpg')">
+            <div class="item slide block-call-to-action" style="background-image: url('img/banner05.jpg')">
                 <h1 class="title" data-aos="fade-right" data-aos-duration="1000">為家，竭盡所能</h2>
                     <p class="below-title" data-aos="fade-right" data-aos-duration="1500">為您量身打造最合適的風格，不讓您的家淪為複製屋。</p>
             </div>
-            <div class="item slide block-call-to-action" style="background-image: url('img/banner02.jpg')">
+
+            <div class="item slide block-call-to-action" style="background-image: url('img/banner01.jpg')">
                 <h1 class="title">不只好看，更要實用</h2>
                     <p class="below-title">除了美觀考量，我們也很重視未來實際使用的實用性。</p>
             </div>
-            <div class="item slide block-call-to-action" style="background-image: url('img/banner03.jpg')">
+            <div class="item slide block-call-to-action" style="background-image: url('img/banner02.jpg')">
                 <h1 class="title">專業監工有保障</h2>
                     <p class="below-title">設計師有監工執照，會親自替您到現場監工把關品質。</p>
+            </div>
+            <div class="item slide block-call-to-action" style="background-image: url('img/banner03.jpg')">
+                <h1 class="title">提供多種室內設計服務</h2>
+                    <p class="below-title">住宅室內設計｜辦公室裝修｜老屋翻修，歡迎來諮詢</p>
 
             </div>
             <div class="item slide block-call-to-action" style="background-image: url('img/banner04.jpg')">
@@ -251,14 +284,100 @@
 
 
     <div id="case-area">
-        <h2 class="light">作品
-            <div class="tit-en">Work</div>
+        <h2 class="light">最新作品
+            <div class="tit-en">Recent Work</div>
         </h2>
 
         <div class="case">
             <div class="category_container">
 
-                <div class="work_content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
+
+                <div class="work_content" onmouseover="highlight(this)" onmouseout="reset()">
+                    <a href="project006.html">
+                        <img src="img/project006.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case006.jpg" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>桃園鄭宅</span>
+                            <p>40 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2024 年完⼯｜京澄泰然</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work_content" onmouseover="highlight(this)" onmouseout="reset()">
+                    <a href="project005.html">
+                        <img src="img/project005.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case005.jpg" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>泰山林宅</span>
+                            <p>15 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2022 年完⼯｜鴻承知青</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="work_content" onmouseover="highlight(this)" onmouseout="reset()">
+                    <a href="project004.html">
+                        <img src="img/project004.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case004.jpg" class="profile_image" alt="Profile" />
+
+                        <div class="profile_detail">
+                            <span>新莊呂宅</span>
+                            <p>27 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2022 年完⼯｜冠德泰極</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="work_content" onmouseover="highlight(this)" onmouseout="reset()">
+                    <a href="project003.html">
+                        <img src="img/project003.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case003.jpg" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>新莊劉宅</span>
+                            <p>29 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2021 年完⼯｜冠德泰極</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work_content" onmouseover="highlight(this)" onmouseout="reset()">
+                    <a href="project002.html">
+                        <img src="img/project002.jpg" class="profession_image" alt="Profession" />
+                        <img src="img/case002.jpg" class="profile_image" alt="Profile" />
+                        <div class="profile_detail">
+                            <span>新莊唐宅</span>
+                            <p>24 坪</p>
+                        </div>
+                        <div class="wrapper">
+                            <div class="profile_quote">
+                                <p>住宅 ｜ 2019 年完⼯｜吉泰美</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="work_content" onmouseover="highlight(this)" onmouseout="reset()">
                     <a href="project001.html">
                         <img src="img/project001.jpg" class="professio_image" alt="Profession" />
                         <img src="img/case001.jpg" class="profile_image" alt="Profile" />
@@ -278,74 +397,6 @@
                 </div>
 
 
-
-                <div class="work_content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
-                    <a href="project003.html">
-                        <img src="img/project003.jpg" class="profession_image" alt="Profession" />
-                        <img src="img/case003.jpg" class="profile_image" alt="Profile" />
-                        <div class="profile_detail">
-                            <span>新莊劉宅</span>
-                            <p>29 坪</p>
-                        </div>
-                        <div class="wrapper">
-                            <div class="profile_quote">
-                                <p>住宅 ｜ 2021 年完⼯｜冠德泰極</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="work_content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
-                    <a href="project004.html">
-                        <img src="img/project004.jpg" class="profession_image" alt="Profession" />
-                        <img src="img/case004.jpg" class="profile_image" alt="Profile" />
-
-                        <div class="profile_detail">
-                            <span>新莊呂宅</span>
-                            <p>27 坪</p>
-                        </div>
-                        <div class="wrapper">
-                            <div class="profile_quote">
-                                <p>住宅 ｜ 2022 年完⼯｜冠德泰極</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="work_content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
-                    <a href="project002.html">
-                        <img src="img/project002.jpg" class="profession_image" alt="Profession" />
-                        <img src="img/case002.jpg" class="profile_image" alt="Profile" />
-                        <div class="profile_detail">
-                            <span>新莊唐宅</span>
-                            <p>24 坪</p>
-                        </div>
-                        <div class="wrapper">
-                            <div class="profile_quote">
-                                <p>住宅 ｜ 2019 年完⼯｜吉泰美</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="work_content" onmouseover="highlightOthers(this)" onmouseout="resetOpacity()">
-                    <a href="project005.html">
-                        <img src="img/project005.jpg" class="profession_image" alt="Profession" />
-                        <img src="img/case005.jpg" class="profile_image" alt="Profile" />
-                        <div class="profile_detail">
-                            <span>泰山林宅</span>
-                            <p>15 坪</p>
-                        </div>
-                        <div class="wrapper">
-                            <div class="profile_quote">
-                                <p>住宅 ｜ 2022 年完⼯｜鴻承知青</p>
-                            </div>
-                        </div>
-                </div>
-                </a>
             </div>
 
 
@@ -361,19 +412,19 @@
         <!-- 手機板 -->
         <div id="case">
 
-            <div class="case-box" data-aos="fade-up"><a href="project001.html">
-                    <div class="case-tit">汐止王邸</div>
-                    <div class="case-info">38 坪</div>
-                    <img src="img/project001.jpg">
-                </a>
-            </div>
-            <div class="case-box" data-aos="fade-up"><a href="project002.html">
-                    <div class="case-tit">新莊唐宅</div>
-                    <div class="case-info">29 坪</div>
-                    <img src="img/project002.jpg">
+            <div class="case-box" data-aos="fade-up"><a href="project006.html">
+                    <div class="case-tit">桃園鄭宅</div>
+                    <div class="case-info">40 坪</div>
+                    <img src="img/project006.jpg">
                 </a>
             </div>
 
+            <div class="case-box" data-aos="fade-up"><a href="project004.html">
+                    <div class="case-tit">泰山林宅</div>
+                    <div class="case-info">15 坪</div>
+                    <img src="img/project005.jpg">
+                </a>
+            </div>
 
             <div class="case-box" data-aos="fade-up"><a href="project003.html">
                     <div class="case-tit">新莊劉宅</div>
@@ -388,10 +439,18 @@
                 </a>
             </div>
 
-            <div class="case-box" data-aos="fade-up"><a href="project004.html">
-                    <div class="case-tit">泰山林宅</div>
-                    <div class="case-info">15 坪</div>
-                    <img src="img/project005.jpg">
+
+            <div class="case-box" data-aos="fade-up"><a href="project002.html">
+                    <div class="case-tit">新莊唐宅</div>
+                    <div class="case-info">29 坪</div>
+                    <img src="img/project002.jpg">
+                </a>
+            </div>
+
+            <div class="case-box" data-aos="fade-up"><a href="project001.html">
+                    <div class="case-tit">汐止王邸</div>
+                    <div class="case-info">38 坪</div>
+                    <img src="img/project001.jpg">
                 </a>
             </div>
 
@@ -467,128 +526,103 @@
                 <div class="tit-en" style="color: rgb(231, 231, 231);">Service Process</div>
             </h2>
         </div>
-        <div class="sop-group">
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="300">
-                <div class="sop-num">1</div>
-                <h4 class="sop-item"><strong>需求訪談</strong></h4>
-                <div class="sop-detail">
-                    我們會先瞭解您的需求及現況，並說明設計費用
-                </div>
-            </div>
-            <div class="next-step" data-aos="fade-up" data-aos-duration="400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
-            </div>
 
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="500">
-                <div class="sop-num">2</div>
-                <h4 class="sop-item">現場丈量</h4>
-                <div class="sop-detail">
-                    設計師會親自到現場進行丈量，精確了解案場
+        <div class="sop_row">
+            <div class="sop_group">
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="300">
+                    <div class="sop-num">1</div>
+                    <h4 class="sop-item"><strong>需求訪談</strong></h4>
+                    <div class="sop-detail">
+                        我們會先瞭解您的需求及現況，並說明設計費用
+                    </div>
                 </div>
-            </div>
-            <div class="next-step" data-aos="fade-up" data-aos-duration="600">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
-            </div>
 
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="700">
-                <div class="sop-num">3</div>
-                <h4 class="sop-item">提供平面配置圖 & 初步報價</h4>
-                <div class="sop-detail">
-                    依據您的需求規劃配置及細節討論與修改，並提供初步報價
-                </div>
-            </div>
-            <div class="next-step" data-aos="fade-up" data-aos-duration="800">
+                <!-- <div class="next-step" data-aos="fade-up" data-aos-duration="400">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                     <path
                         d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                 </svg>
-            </div>
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="900">
-                <div class="sop-num">4</div>
-                <h4 class="sop-item">簽訂設計約</h4>
-                <div class="sop-detail">
-                    簽訂設計合約前，將不提供任何圖面供您留存，敬請見諒
+            </div> -->
+
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="500">
+                    <div class="sop-num">2</div>
+                    <h4 class="sop-item">現場丈量</h4>
+                    <div class="sop-detail">
+                        設計師會親自到現場進行丈量，精確了解案場
+                    </div>
                 </div>
-            </div>
-            <div class="next-step" data-aos="fade-up" data-aos-duration="1000">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
-            </div>
 
 
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="1100">
-                <div class="sop-num">5</div>
-                <h4 class="sop-item">繪製施工圖、效果圖 & 工程報價</h4>
-                <div class="sop-detail">
-                    1、繪製 3D 模擬圖 、設計施工圖<br>
-                    2、工程預算確認及工程進度討論
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="700">
+                    <div class="sop-num">3</div>
+                    <h4 class="sop-item">提供平面配置圖與初步報價</h4>
+                    <div class="sop-detail">
+                        依據您的需求規劃配置及細節討論與修改，並提供初步報價
+                    </div>
                 </div>
-            </div>
-            <div class="next-step" data-aos="fade-up" data-aos-duration="1200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
-            </div>
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="1300">
-                <div class="sop-num">6</div>
-                <h4 class="sop-item">簽訂工程合約</h4>
-                <div class="sop-detail">
-                    1、工程進度及施工期限確認<br>
-                    2、付款方式說明
+
+
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="900">
+                    <div class="sop-num">4</div>
+                    <h4 class="sop-item">簽訂設計約</h4>
+                    <div class="sop-detail">
+                        簽訂設計合約前，將不提供任何圖面供您留存，敬請見諒
+                    </div>
                 </div>
-            </div>
-            <div class="next-step" data-aos="fade-up" data-aos-duration="1400">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
-            </div>
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="1500">
-                <div class="sop-num">7</div>
-                <h4 class="sop-item">工程施工</h4>
-                <div class="sop-detail">
-                    1、依據施工圖面進行施工<br>
-                    2、工程進度掌控與協調
-                </div>
-            </div>
-            <div class="next-step" data-aos="fade-up" data-aos-duration="1600">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
-            </div>
-            <div class="sop-area" data-aos="fade-up" data-aos-duration="1700">
-                <div class="sop-num">8</div>
-                <h4 class="sop-item">交屋及售後服務</h4>
-                <div class="sop-detail">
-                    提供完善的售後服務及保固
-                </div>
+
             </div>
 
-            <div class="next-btn2">
-                <a href="#intro-area-bg">
-                    <div class="mouse4"></div>
-                    <div class="mouse3"></div>
-                </a>
-            </div>
+            <div class="sop_group">
 
+
+
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="sop-num">5</div>
+                    <h4 class="sop-item">繪製施工圖、效果圖與工程報價</h4>
+                    <div class="sop-detail">
+                        1、繪製 3D 模擬圖 、設計施工圖<br>
+                        2、工程預算確認及工程進度討論
+                    </div>
+                </div>
+
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="1300">
+                    <div class="sop-num">6</div>
+                    <h4 class="sop-item">簽訂工程合約</h4>
+                    <div class="sop-detail">
+                        1、工程進度及施工期限確認<br>
+                        2、付款方式說明
+                    </div>
+                </div>
+
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="sop-num">7</div>
+                    <h4 class="sop-item">工程施工</h4>
+                    <div class="sop-detail">
+                        1、依據施工圖面進行施工<br>
+                        2、工程進度掌控與協調
+                    </div>
+                </div>
+
+                <div class="sop_area" data-aos="fade-up" data-aos-duration="1700">
+                    <div class="sop-num">8</div>
+                    <h4 class="sop-item">交屋及售後服務</h4>
+                    <div class="sop-detail">
+                        提供完善的售後服務及保固
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+        <div class="next-btn2">
+            <a href="#intro-area-bg">
+                <div class="mouse4"></div>
+                <div class="mouse3"></div>
+            </a>
+        </div>
+
+    </div>
     </div>
 
 
@@ -613,7 +647,7 @@
                     <li>生活管家室內裝修設計 室內設計師</li>
                     <li>乙級建築物室內設計技術士</li>
                     <li>乙級建築物室內裝修工程管理技術士</li>
-                    
+
                 </ul>
                 <br>
                 <div class="contact">
@@ -634,7 +668,7 @@
     </div>
 
 
-    
+
 
 
     <!--Banner Slider-->
