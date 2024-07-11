@@ -515,7 +515,7 @@ section {
 
 
 #logo img {
-    max-width: 180px;
+    max-width: 160px;
 
 }
 
@@ -558,7 +558,7 @@ section {
     font-weight: 200;
     font-size: .8rem;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
