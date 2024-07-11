@@ -515,7 +515,7 @@ section {
 
 
 #logo img {
-    max-width: 150px;
+    max-width: 180px;
 
 }
 
@@ -1410,7 +1410,6 @@ h2 {
 
 
 .work_content {
-    --active: 0;
     cursor: pointer;
     overflow: clip;
     position: relative;
@@ -1419,30 +1418,32 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 1px;
+
     padding: 2.5rem;
-    /* border: 2px solid #ffffffad; */
     width: 15%;
     height: 100%;
     border-radius: 15px;
-    transition: width .2s ease-in-out;
+    transition: width .5s ease-in-out;
 
 
 }
 
+.work_content:hover {
+    width: 55%;
+    border: 2px solid #ffffff;
+    transition: width 3s;
+
+}
+
 .work_focus{
-    width: 100%;
     height: 100%;
+    width: 55%;
     min-width: 55%;
     transition: width 1s;
 }
 
 
-.work_content:hover {
-    border: 2px solid #ffffff;
-    transition: width 5s;
 
-}
 
 
 
