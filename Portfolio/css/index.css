@@ -434,7 +434,7 @@ section {
     padding-top: 15px;
     background: url(../img/banner-inside.jpg) repeat center;
     background-attachment: fixed;
-    filter: brightness(0.6);
+    filter: brightness(0.7);
     width: 100%;
     z-index: 88;
     position: relative;
@@ -488,7 +488,7 @@ section {
 }
 
 #header-container-inside {
-    max-width: 85vmax;
+    max-width: 75vw;
     margin: auto;
 }
 
@@ -534,6 +534,12 @@ section {
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
+}
+
+
+#case-logo img{
+    max-width: 160px;
+   
 }
 
 
