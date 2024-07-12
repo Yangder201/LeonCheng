@@ -1423,12 +1423,12 @@ h2 {
     width: 15%;
     height: 100%;
     border-radius: 15px;
-    transition: width .5s ease-in-out;
+    transition: width .8s ease-in-out;
 
 
 }
 
-.work_content:hover {
+.work_content a:hover {
     width: 55%;
     border: 2px solid #ffffff;
     transition: width 3s;
@@ -1437,12 +1437,18 @@ h2 {
 
 .work_focus{
     height: 100%;
-    width: 55%;
-    min-width: 55%;
+    width: 60%;
+    min-width: 60%;
+    border: 2px solid #ffffffe8;
     transition: width 1s;
 }
 
 
+
+.dimmed {
+    filter: brightness(0.3); /* 變暗 */
+    transition: filter 0.4s ease-in-out;
+}
 
 
 
@@ -1583,11 +1589,6 @@ h2 {
 
 
 
-
-.dimmed {
-    filter: brightness(0.5); /* 變暗 */
-    transition: filter 0.3s ease-in-out;
-}
 
 
 
