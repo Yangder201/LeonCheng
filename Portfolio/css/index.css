@@ -3274,6 +3274,11 @@ h2 {
 
 @media only screen and (max-width: 426px) {
 
+    .case-box a::before {
+        opacity: 0;
+        
+    }
+
     .work{
         width: 100%;
      }
