@@ -164,12 +164,12 @@
             });
         });
 
-
+        
 
         //整頁鎖右鍵
-        // document.addEventListener('contextmenu', function (event) {
-        // event.preventDefault();
-        // });
+        document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        });
 
     </script>
 
@@ -244,7 +244,7 @@
     </div>
 
     <div id="banner">
-        <div id="banner-slider-demo-17" class="owl-carousel owl-theme">
+        <div id="banner-slider" class="owl-carousel owl-theme">
             <div class="item slide block-call-to-action" style="background-image: url('img/banner05.jpg')">
                 <h1 class="title" data-aos="fade-right" data-aos-duration="1000">為家，竭盡所能</h2>
                     <p class="below-title" data-aos="fade-right" data-aos-duration="1500">為你量身打造最合適的風格，不讓您的家淪為複製屋。</p>
@@ -687,7 +687,7 @@
         carousal();
 
         function carousal() {
-            $("#banner-slider-demo-17").owlCarousel({
+            $("#banner-slider").owlCarousel({
                 items: 1,
                 autoplay: true,
                 autoplayTimeout: 5000,
