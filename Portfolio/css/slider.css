@@ -13,10 +13,10 @@ body {
 }
 
 .block-call-to-action {
-    border-left: 10px solid #2b2b2bf2;
+    border-left: 20px solid #2b2b2bf2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom-left-radius: 200px;
+    border-bottom-left-radius: 150px;
     border-top: 0;
     color: #fff;
     background-position: 50%;
