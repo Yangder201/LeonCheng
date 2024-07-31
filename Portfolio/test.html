@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>純圖片無連結作品展示區塊</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/test.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div id="case-area">
+        <h2 class="light">作品
+            <div class="tit-en">Work</div>
+        </h2>
+
+        <div class="case">
+            <div class="category_container">
+            <fieldset>
+               
+                   
+                <label style="--_img: url(../img/project006.jpg)">
+                    <input type="radio" name="images" value="" checked>
+                </label> 
+                <label style="--_img: url(../img/project005.jpg)">
+                    <input type="radio" name="images" value="">
+                </label>
+                <label style="--_img: url(../img/project004.jpg)">
+                    <input type="radio" name="images" value="Monstera">
+                </label>
+                <label style="--_img: url(../img/project003.jpg)">
+                    <input type="radio" name="images" value="Pothos">
+                </label>
+                <label style="--_img: url(../img/project002.jpg)">
+                    <input type="radio" name="images" value="Rubber Tree">
+                </label>
+                <label style="--_img: url(../img/project001.jpg)">
+                    <input type="radio" name="images" value="Rubber Tree">
+                </label>
+
+            </fieldset>
+            </div>
+        </div>
+      
+    </div>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    this.querySelector("img").style.transform = "scale(1)";
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    this.querySelector("img").style.transform = "scale(1.05)";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
