@@ -46,31 +46,10 @@
 	<script>
 
 
-		//作品區 移入移出
-		// document.addEventListener("DOMContentLoaded", function () {
-		// 	const items = document.querySelectorAll(".work_content");
-
-		// 	items.forEach(item => {
-		// 		item.addEventListener("mouseenter", function () {
-		// 			items.forEach(otherItem => {
-		// 				otherItem.classList.remove('work_focus'); //非選擇作品移除 class
-		// 				otherItem.style.width = '100px'; //縮小非選擇的作品寬度
-		// 				otherItem.querySelector('.profile_image').style.opacity = 1; // 恢復原縮圖
-
-		// 			});
-
-		// 			item.classList.add('work_focus'); //當前選擇作品加上 class 效果
-		// 			item.querySelector('.profile_image').style.opacity = 0; // 出現完整作品圖
-		// 		});
-		// 	});
-		// });
-
-
-
-		//整頁鎖右鍵
-		// document.addEventListener('contextmenu', function (event) {
-		// 	event.preventDefault();
-		// });
+		// 整頁鎖右鍵
+		document.addEventListener('contextmenu', function (event) {
+			event.preventDefault();
+		});
 
 	</script>
 
