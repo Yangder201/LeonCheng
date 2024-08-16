@@ -465,8 +465,8 @@ section {
 
 
 #header-fixed {
-    width: 80vw;
-    margin-left: 8vw;
+    width: 84vw;
+    margin-left: 6vw;
     margin-top: 5vh;
     height: 75px;
     padding: 0 2vw;
@@ -1128,8 +1128,8 @@ h2 {
     width: 140px;
     min-height: 80px;
     padding: 10px 5px;
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: 300;
+    font-size: 1rem;
     line-height: 1.8rem;
     text-align: center;
     color: #ffffff;
@@ -1446,7 +1446,7 @@ h2 {
 
 .work_content a:hover {
     width: 55%;
-    border: 2px solid #ffffff;
+    /* border: 2px solid #ffffff; */
     transition: width 3s;
 
 }
@@ -1455,7 +1455,7 @@ h2 {
     height: 100%;
     width: 60%;
     min-width: 60%;
-    border: 2px solid #ffffffe8;
+    /* border: 2px solid #ffffffe8; */
     transition: width 1s;
 }
 
