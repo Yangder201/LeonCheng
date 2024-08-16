@@ -111,9 +111,11 @@
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 700) {
-                document.getElementById("header-fixed").style.background = '#dbdbdb33';
-                document.getElementById("header-fixed").style.marginTop = '1.5vh';
-                document.getElementById("header-fixed").style.height = '70px';
+                document.getElementById("header-fixed").style.background = '#00000080';
+                document.getElementById("header-fixed").style.marginTop = '0';
+                document.getElementById("header-fixed").style.height = '75px';
+                document.getElementById("header-fixed").style.marginLeft = '0';
+                document.getElementById("header-fixed").style.width = '100vw';
                 document.getElementById("header-fixed").style.boxShadow = '';
                 // document.getElementById("header-fixed").style.border = '1px solid #ffffff26';
                 document.getElementById("logo").style.marginTop = '0';
@@ -123,8 +125,10 @@
 
             else {
                 document.getElementById("header-fixed").style.background = '#ffffff17';
-                document.getElementById("header-fixed").style.marginTop = '5vh';
-                document.getElementById("header-fixed").style.height = '75px';
+                document.getElementById("header-fixed").style.marginTop = '';
+                document.getElementById("header-fixed").style.height = '';
+                document.getElementById("header-fixed").style.marginLeft = '';
+                document.getElementById("header-fixed").style.width = '';
                 document.getElementById("header-fixed").style.boxShadow = '';
                 document.getElementById("header-fixed").style.border = '';
                 document.getElementById("logoimg").style.maxWidth = '160px';
@@ -187,9 +191,9 @@
 
 
         //整頁鎖右鍵
-        document.addEventListener('contextmenu', function (event) {
-            event.preventDefault();
-        });
+        // document.addEventListener('contextmenu', function (event) {
+        //     event.preventDefault();
+        // });
 
     </script>
 
