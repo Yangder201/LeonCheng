@@ -57,15 +57,15 @@ a:active {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(228, 228, 228, 0.719);
-    border-radius: 999px;
+    background-color: rgb(123 123 123 / 72%);
+    border-radius: 10px;
     border: 5px solid transparent;
     background-clip: content-box;
 
 }
 
 ::-webkit-scrollbar-track-piece {
-    background: #1f1f1f;
+    background: #000000;
 }
 
 img {
@@ -657,6 +657,7 @@ section {
 #banner {
     background: linear-gradient(87deg, #2b2b2b, #1c1c1c);
     background-attachment: fixed;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -665,6 +666,16 @@ section {
 }
 
 
+#banner::before{
+    content: '';
+    width: 3vw;
+    height: 100vh;
+    border-left: 2px solid #d1d1d12a;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+}
+
 #case-area {
     width: 100vw;
     height: 90vh;
@@ -672,6 +683,7 @@ section {
     position: relative;
     background: linear-gradient(87deg, #2b2b2b, #1c1c1c);
 }
+
 
 
 #case {
@@ -1069,7 +1081,7 @@ h2 {
 }
 
 #service-bg {
-    width: 100%;
+    width: 100vw;
     /* height: 85vh; */
     padding-top: 15vh;
     padding-bottom: 15vh;
@@ -1078,6 +1090,7 @@ h2 {
     background-attachment: fixed;
     position: relative;
 }
+
 
 #service-tit-bg {
     width: 250px;
@@ -1089,8 +1102,8 @@ h2 {
 
 .service-group {
     max-width: 70vw;
-    padding: 10vh 0 10vh 0;
-    margin: -6vh auto 0 auto;
+    padding: 14vh 0 6vh 0;
+    margin: -5vh auto 0 auto;
     border: 3px solid #48524a;
     border-radius: 10px;
 }
