@@ -13,7 +13,7 @@
 
 body {
     font-size: 16px;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Nunito', 'Hind Vadodara','Noto Sans TC',"微軟正黑體", sans-serif;
     color: var(--text-color);
     max-width: 100%;
     overflow-x: hidden;
@@ -473,9 +473,10 @@ section {
     border-radius: 8px;
     z-index: 99;
     position: fixed;
-    transition: 0.3s;
+    transition: .5s;
     background: #ffffff17;
     backdrop-filter: blur(5px);
+    /* border-left: 15px solid #ffffff; */
     -webkit-backdrop-filter: blur(5px);
     box-shadow: -2px 10px 30px -10px #2f2f2f52;
 }
@@ -1048,8 +1049,10 @@ section {
 
 
 h2 {
-    font-size: 1.7rem !important;
-    font-weight: 400 !important;
+    font-size: 1.8rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 3pt;
+    font-family: 'Nunito', 'Hind Vadodara','Noto Serif TC',"微軟正黑體", sans-serif;
     text-align: center;
 
 }
@@ -1065,13 +1068,28 @@ h2 {
     font-size: 1rem;
 }
 
+
+.tit_work{
+    width: 85vw;
+    margin: auto;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tit_work_en{
+    font-size: .8rem;
+    padding: 5px;
+}
+
 .tit-en {
-    font-size: .7rem;
+    font-size: .8rem;
     line-height: 2rem;
     font-weight: 200;
     letter-spacing: 1.5px;
     padding-top: 5px;
     color: #dbdbdb;
+    font-family: 'Nunito', 'Hind Vadodara',"微軟正黑體", sans-serif;
 }
 
 .left {
@@ -1163,11 +1181,12 @@ h2 {
     width: 140px;
     min-height: 80px;
     padding: 10px 5px;
-    font-weight: 300;
-    font-size: 1rem;
+    font-weight: 200;
+    font-size: 1.1rem;
     line-height: 1.8rem;
     text-align: center;
     color: #ffffff;
+    font-family: 'Nunito', 'Hind Vadodara','Noto Serif TC',"微軟正黑體", sans-serif;
 }
 
 
@@ -1310,19 +1329,21 @@ h2 {
     margin-left: -20px;
     font-weight: 500;
     color: var(--main-color);
+    font-family: 'Nunito', 'Hind Vadodara','Noto Serif TC',"微軟正黑體", sans-serif;
 }
 
 .sop-item {
     width: 30%;
     margin-right: 1vw;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
     line-height: 30px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     color: var(--text-color);
+    font-family: 'Nunito', 'Hind Vadodara','Noto Serif TC',"微軟正黑體", sans-serif;
 
 }
 
@@ -1484,7 +1505,19 @@ h2 {
     /* border: 2px solid #ffffff; */
     transition: width 3s;
 
+
+
 }
+
+.work_content:hover{
+    height: 100%;
+    width: 60%;
+    min-width: 60%;
+    border: 2px solid #ffffffe8;
+    transition: width 1s;
+}
+
+
 
 .work_focus{
     height: 100%;
