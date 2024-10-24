@@ -3,32 +3,32 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-052763HVCM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-052763HVCM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-052763HVCM');
-</script>
-<!-- Hotjar Tracking Code for 杰境 -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5078852,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+        gtag('config', 'G-052763HVCM');
+    </script>
+    <!-- Hotjar Tracking Code for 杰境 -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 5078852, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="杰境室內設計｜S.J. Interior Design" />
     <meta property="og:description"
         content="住宅室內設計裝修規劃｜辦公室設計裝修規劃｜老屋翻修規劃｜設計圖繪製｜專業責任施工｜傢俱規劃建議｜3D 製圖預覽｜新莊室內設計｜板橋室內設計｜新莊裝潢｜板橋裝潢" />
-    <meta property="og:image" content="https://yangder201.github.io/LeonCheng/Portfolio/img/share-img.jpg"></meta>
+    <meta property="og:image" content="https://yangder201.github.io/LeonCheng/Portfolio/img/share-img.jpg">
     <meta property="og:type" content="Interior.Design" />
     <meta property="og:url" content="https://yangder201.github.io/LeonCheng/Portfolio/" />
     <meta name="keywords"
@@ -47,16 +47,14 @@
         rel="stylesheet">
 
 
-
-        
     <!--home icon-->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!--RWD MENU相關-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/menu.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
 
     <!--滾動效果-->
@@ -69,147 +67,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-
-    <!--go to top js-->
-    <script type="text/javascript">
-        $(function () {
-            $("#gotop").click(function () {
-                jQuery("html,body").animate({
-                    scrollTop: 0
-                }, 500);
-            });
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 300) {
-                    $('#gotop').fadeIn("fast");
-                } else {
-                    $('#gotop').stop().fadeOut("fast");
-                }
-            });
-        });
-
-
-
-        //錨點滑動
-
-        $(document).ready(function () {
-            $("a").on("click", function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash; //抓取網頁#錨點
-                    console.log(hash);
-                    $("html,body").animate(
-                        {
-                            scrollTop: $(hash).offset().top
-                        },
-                        800
-                    );
-                }
-            });
-        });
-
-
-
-
-        //主選單往下滾動變化
-        window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 700) {
-                document.getElementById("header-fixed").style.background = '#00000080';
-                document.getElementById("header-fixed").style.marginTop = '0';
-                document.getElementById("header-fixed").style.height = '75px';
-                document.getElementById("header-fixed").style.marginLeft = '0';
-                document.getElementById("header-fixed").style.width = '100vw';
-                document.getElementById("header-fixed").style.boxShadow = '';
-                document.getElementById("header-fixed").style.borderRadius = '0';
-                document.getElementById("header-fixed").style.borderLeft = '0';
-                document.getElementById("logo").style.marginTop = '0';
-                document.getElementById("logoimg").style.maxWidth = '150px';
-
-            }
-
-            else {
-                document.getElementById("header-fixed").style.background = '#ffffff17';
-                document.getElementById("header-fixed").style.marginTop = '';
-                document.getElementById("header-fixed").style.height = '';
-                document.getElementById("header-fixed").style.marginLeft = '';
-                document.getElementById("header-fixed").style.width = '';
-                document.getElementById("header-fixed").style.boxShadow = '';
-                document.getElementById("header-fixed").style.border = '';
-                document.getElementById("header-fixed").style.borderRadius = '';
-                document.getElementById("logoimg").style.maxWidth = '160px';
-                document.getElementById("logo").style.marginTop = '0';
-
-
-            }
-        }
-
-
-        //往下滑動至當前 div 時，主選單加上 focus 狀態樣式
-        window.addEventListener('scroll', function () {
-            var scrollPosition = window.scrollY;
-            var menuItems = document.querySelectorAll('#cssmenu ul li a');
-
-            menuItems.forEach(function (item) {
-                var sectionId = item.getAttribute('href').substring(1);
-                var section = document.getElementById(sectionId);
-                if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
-                    removeFocusFromMenuItems(menuItems);
-                    item.parentNode.classList.add('focus');
-                } else {
-                    item.parentNode.classList.remove('focus');
-                }
-            });
-        });
-
-        function removeFocusFromMenuItems(menuItems) {
-            menuItems.forEach(function (item) {
-                item.parentNode.classList.remove('focus');
-            });
-        }
-
-
-        //作品區 移入移出
-        document.addEventListener("DOMContentLoaded", function () {
-            const items = document.querySelectorAll(".work_content");
-
-            items.forEach(item => {
-                item.addEventListener("mouseenter", function () {
-                    items.forEach(otherItem => {
-                        otherItem.classList.remove('work_focus'); //非選擇作品移除 class
-                        otherItem.classList.add('dimmed'); // 非選擇作品加上變暗 class
-                        otherItem.style.width = '8%'; //縮小非選擇的作品寬度
-                        otherItem.querySelector('.profile_image').style.opacity = 1; // 恢復原縮圖
-                    });
-
-                    item.classList.add('work_focus'); //當前選擇作品加上 class 效果
-                    item.classList.remove('dimmed'); // 當前選擇作品移除變暗 class
-                    item.querySelector('.profile_image').style.opacity = 0; // 出現完整作品圖
-                });
-                item.addEventListener("mouseleave", function () {
-                    items.forEach(otherItem => {
-                        otherItem.classList.remove('dimmed'); // 恢復所有作品的背景顏色
-                    });
-                });
-            });
-        });
-
-
-
-        //整頁鎖右鍵
-        // document.addEventListener('contextmenu', function (event) {
-        //      event.preventDefault();
-        // });
-
-    </script>
-
+    <script src="js/index.js" type="text/JavaScript"></script>
 
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNWP7C6G"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNWP7C6G" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <div id="gotop">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill"
             viewBox="0 0 16 16">
@@ -717,11 +584,9 @@
     <!--Banner Slider-->
     <link href="css/slider.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" type="text/javascript"></script>
 
 
     <script>
