@@ -14,6 +14,7 @@
 body {
     font-size: 16px;
     font-family: 'Nunito', 'Hind Vadodara','Noto Sans TC',"微軟正黑體", sans-serif;
+    scroll-behavior: smooth;
     color: var(--text-color);
     max-width: 100%;
     overflow-x: hidden;
@@ -468,11 +469,12 @@ section {
     width: 84vw;
     margin-left: 6vw;
     margin-top: 5vh;
+    position: fixed;
     height: 75px;
     padding: 0 2vw;
     border-radius: 8px;
     z-index: 99;
-    position: fixed;
+ 
     transition: .5s;
     background: #ffffff17;
     backdrop-filter: blur(5px);
@@ -1055,6 +1057,11 @@ h2 {
     font-family: 'Nunito', 'Hind Vadodara','Noto Serif TC',"微軟正黑體", sans-serif;
     text-align: center;
 
+}
+
+
+.work_tit_inline{
+    display: inline;
 }
 
 
