@@ -48,6 +48,7 @@ function scrollFunction() {
       document.getElementById("header-fixed").style.boxShadow = '';
       document.getElementById("header-fixed").style.borderRadius = '0';
       document.getElementById("header-fixed").style.borderLeft = '0';
+      document.getElementById("header-fixed").style.borderBottom = '2px solid #0000004a';
       document.getElementById("logo").style.marginTop = '0';
       document.getElementById("logoimg").style.maxWidth = '150px';
 
@@ -121,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//整頁鎖右鍵
+整頁鎖右鍵
 document.addEventListener('contextmenu', function (event) {
      event.preventDefault();
 });
